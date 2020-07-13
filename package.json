@@ -1,0 +1,23 @@
+{
+  "name": "@andrewgioia/blog",
+  "version": "1.0.0",
+  "description": "Weblog of Andrew Gioia",
+  "main": "index.html",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewgioia/blog.git"
+  },
+  "author": "Andrew Gioia",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/andrewgioia/blog/issues"
+  },
+  "homepage": "https://github.com/andrewgioia/blog#readme"
+}
