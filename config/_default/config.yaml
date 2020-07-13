@@ -1,0 +1,10 @@
+enableEmoji: true
+languageCode: en-us
+log: true
+logFile: "logs.txt"
+params:
+  AuthorName: Andrew Gioia
+  GitHubUser: andrewgioia
+  Subtitle: /posts
+title: Andrew Gioia
+verboseLog: true

@@ -1,0 +1,3 @@
+baseURL: https://posts.andrewgioia.com
+enableRobotsTXT: true
+logFile: "~/.log/hugo.txt"

@@ -1,0 +1,21 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<main id="post" aria-role="main">
+    <aside>
+        <h1>
+            {{ .Title }}
+        </h1>
+        <time>
+            {{ .PublishDate.Format "January 2, 2006" }}
+        </time>
+    </aside>
+    <article>
+        {{ .Content }}
+    </article>
+</main>
+{{ .TableOfContents }}
+<a id="top" class="arrow back" href="#">To the top!</a>
+{{ end }}

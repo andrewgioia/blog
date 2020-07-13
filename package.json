@@ -1,0 +1,27 @@
+{
+  "name": "posts.andrewgioia.com",
+  "version": "1.0.0",
+  "description": "Longer form content by Andrew Gioia",
+  "main": "public/index.html",
+  "private": true,
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --no-source-map assets/scss/main.scss assets/css/style.css",
+    "watch": "sass --no-source-map --watch assets/scss/main.scss public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewgioia/blog.git"
+  },
+  "keywords": [],
+  "author": "Andrew Gioia",
+  "license": "CC-BY-NC-ND",
+  "bugs": {
+    "url": "https://github.com/andrewgioia/blog/issues"
+  },
+  "homepage": "https://posts.andrewgioia.com"
+}

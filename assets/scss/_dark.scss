@@ -1,0 +1,45 @@
+// dark mode preference
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--bg-dark);
+        color: var(--text-dark);
+    }
+    header {
+        border-top-color: var(--border-dark);
+        h1 {
+            a {
+                color: var(--text-dark-hl);
+            }
+            span {
+                color: var(--text-subdued-dark);
+            }
+        }
+    }
+    a {
+        color: var(--link-color-dark);
+
+        &:not(.arrow):hover {
+            border-bottom: 2px solid var(--link-color-dark);
+        }
+    }
+    main {
+        aside {
+            h1 {
+                background: var(--text-title-dark);
+                background: linear-gradient(135deg, $blue-lt 0%, $purple-lt 67%);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+        article {
+            h2 {
+                color: var(--text-dark-hl);
+            }
+            blockquote {
+                p {
+                    border-left-color: var(--border-dark);
+                }
+            }
+        }
+    }
+}

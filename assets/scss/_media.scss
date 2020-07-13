@@ -1,0 +1,50 @@
+// media queries
+
+@media only screen and (max-width: $screen-tablet) {
+    main {
+        align-self: stretch;
+        overflow-x: hidden; // safety for negative figure margin below
+        width: auto;
+
+        aside,
+        article h2,
+        article p {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 100%;
+            text-align: left;
+            width: 100%;
+        }
+        article {
+            ul {
+                align-self: end;
+                padding: 0;
+                width: calc(100% - 2.5vmax);
+            }
+            figure {
+                margin: 2vmax -6vmin 1vmax;
+            }
+        }
+    }
+    ul.list li {
+        flex-direction: column;
+        time {
+            padding: 1vmax 0 0 0;
+        }
+    }
+}
+
+@media only screen and (min-width: $screen-display) {
+    main article h2 {
+        margin: 2vmax 7vmin 1vmax;
+    }
+    ul.list li time {
+        padding-left: 3rem;
+    }
+}
+
+@media only screen and (min-width: $screen-full) {
+    main article h2 {
+        margin: 2vmax 5vmin 1vmax;
+    }
+}

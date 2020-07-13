@@ -1,0 +1,48 @@
+$icon-arrow:        '\e902';
+$icon-arrow-left:   '\e904';
+$icon-email:        '\e903';
+$icon-github:       '\e900';
+$icon-mastodon:     '\e901';
+
+@font-face {
+    font-family: 'andrew';
+    src: url('../icons/andrew.eot?#{$version}');
+    src: url('../icons/andrew.eot?#{$version}#iefix') format('embedded-opentype'),
+         url('../icons/andrew.woff2?#{$version}') format('woff2'),
+         url('../icons/andrew.ttf?#{$version}') format('truetype'),
+         url('../icons/andrew.woff?#{$version}') format('woff'),
+         url('../icons/andrew.svg?#{$version}#andrew') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'andrew' !important; // !i to prevent issues with browser extensions that change fonts
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    // better rendering
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+    content: $icon-arrow;
+}
+.icon-arrow-left:before {
+    content: $icon-arrow-left;
+}
+.icon-email:before {
+    content: $icon-email;
+}
+.icon-github:before {
+    content: $icon-github;
+}
+.icon-mastodon:before {
+    content: $icon-mastodon;
+}

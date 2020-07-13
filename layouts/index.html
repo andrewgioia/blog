@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main id="home" aria-role="main">
+    <div class="intro">
+        {{.Content}}
+    </div>
+    <ul class="list">
+    {{ range .Site.RegularPages }}
+        <li>
+            <div>
+                <a href="{{ .Permalink }}" class="arrow">{{ .LinkTitle }}</a>
+            </div>
+            <time>
+                {{ .PublishDate.Format "January 2006" }}
+            </time>
+        </li>
+    {{ end }}
+    </ul>
+</main>
+{{ end }}
