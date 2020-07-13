@@ -1,5 +1,5 @@
 {
-  "name": "posts.andrewgioia.com",
+  "name": "@andrewgioia/blog",
   "version": "1.0.0",
   "description": "Longer form content by Andrew Gioia",
   "main": "public/index.html",
@@ -23,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/andrewgioia/blog/issues"
   },
-  "homepage": "https://posts.andrewgioia.com"
+  "homepage": "https://blog.andrewgioia.com"
 }
