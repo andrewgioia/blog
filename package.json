@@ -1,10 +1,10 @@
 {
-  "name": "@andrewgioia/blog",
+  "name": "@andrewgioia/blog-public",
   "version": "1.0.0",
   "description": "Weblog of Andrew Gioia",
   "main": "index.html",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "@andrewgioia/blog": "*"
   },
   "devDependencies": {},
   "scripts": {
