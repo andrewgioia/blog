@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Longer form content by Andrew Gioia",
   "main": "public/index.html",
-  "private": true,
   "dependencies": {
     "normalize.css": "^8.0.1"
   },
