@@ -27,6 +27,7 @@
             h1 {
                 background: var(--text-title-dark);
                 background: linear-gradient(135deg, $blue-lt 0%, $purple-lt 67%);
+                -webkit-background-clip: text;
                 background-clip: text;
                 color: transparent;
             }
