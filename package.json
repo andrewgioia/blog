@@ -1,6 +1,6 @@
 {
   "name": "@andrewgioia/blog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Longer form content by Andrew Gioia",
   "main": "public/index.html",
   "dependencies": {
