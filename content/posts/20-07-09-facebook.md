@@ -1,9 +1,15 @@
 ---
 title: Boycott Facebook, but not because it supports free speech
 linkTitle: Boycott Facebook, but not for its free speech
+author: Andrew Gioia
 slug: "facebook"
 date: 2020-07-01
 publishdate: 2020-07-05
+tags: 
+    - Free speech
+    - Privacy
+    - Facebook
+    - Internet
 ---
 
 {{< html >}}
@@ -92,7 +98,7 @@ Corporations have vested interests that are often very much opposed to public in
 
 Just as bad an outcome is that we kill our instinct to question the things that we read and see, instead assuming they've been vetted or preapproved and taking them as fact. The cost for this convenience&mdash;both consolidating this power into private groups and giving up our own judgment&mdash;is also far too high. Over time as we come to expect and await our corporate censors to approve the news we read and messages we share, we'll trust that what we do read is somehow "verified" with a comfy checkmark. There's no need to read opposing viewpoints, if they're even able to be seen. 
 
-**To be fair, it's an impossible situation for private corporations offering a public utility.** They have tremendous pressure from every angle to perform often opposing actions. Flagging a story or not flagging a story creates an opinion. Censoring "hate speech" draws a line and tacitly approves hateful things not yet banned. Political parties and interest groups report each others' content as fake. Enabling true free speech fosters actual debate but impinges requests for safe spaces; censorship gives users their bubble but creates groupthink and echo chambers.
+**To be fair, it's an impossible situation for private corporations offering a public utility.** They have tremendous pressure from every angle to perform often opposing actions. Flagging a story or not flagging a story creates an opinion. Censoring "hate speech" draws a line and tacitly approves hateful things not yet banned. Banning some racism but [leaving up certain types of racism](https://www.youtube.com/watch?v=w0HkK-AmOL8) creates obvious hypocrisy. Political parties and interest groups report each others' content as fake. Enabling true free speech fosters actual debate but impinges requests for safe spaces; censorship gives users their bubble but creates groupthink and echo chambers.
 
 These utility-level platforms shouldn't just shouldn't just be banned from censorship for power level reasons, **they shouldn't attempt it _because it's impossible_**. It is simply an impossible balance to maintain that no private entity is equipped to handle.
 
@@ -129,3 +135,33 @@ This is federated, decentralized communication over an official protocol. There 
 {{< html >}}
 <p class="big">If you've made it this far or came directly here to look for some great reasons to boycott Facebook or any commercial social media platform, here's a nonexhaustive list to get you started!</p>
 {{< /html >}}
+
+### Facebook is a giant Skinner box
+
+For well over a decade Facebook has been ramping up its operant conditioning to "drive engagement" and ultimately sell more ads. Every decision it makes has the end purpose of controlling eyeballs and selling more ads. A steady stream of incremental rewards&mdash;likes, emoji reactions, shares&mdash;along with little punishments like snarky replies or no comments at all modify behavior to Facebook's benefit and its users' detriment. 
+
+[The Atlantic observed this 7 years ago](https://www.theatlantic.com/technology/archive/2013/06/skinner-marketing-were-the-rats-and-facebook-likes-are-the-reward/276613/) and described it much better than I can:
+
+> We peck at keys in search of virtual rewards&mdash;good news arriving in an email, a retweet, a thumbs-up on a blog post, or leveling up in World of Warcraft. The effectiveness of these behavioral modification techniques are in plain sight&mdash;families ignoring one another while checking the email and Facebook at dinner, drivers texting in heavy traffic, and 14-year-old girls sending hundreds of text messages a day. . . .
+>
+> As humans, we have a powerful need for human connection and recognition. Facebook and Twitter meet the need by enabling us to gather friends and followers. Facebook and Twitter's "like" or "tweet" buttons are designed into Web sites throughout the Internet. Big rewards that come at unpredictable times trigger dopamine releases in the pleasure centers of our brains and keep us searching the web for the best price, trying to win an eBay auction, or pushing buttons on slots. 
+
+This was evident early when the timeline was changed from purely chronological to "Feed": some algorithm of new(ish) posts by other users you probably get angry at or interact a lot with without any end. You almost never actually reach the end of the Feed, you just get fed more and more content so you don't put the phone down. Over time constant nudges, reminders, bubbling up old content, and a slew of other changes all serve to keep you on the platform and "engaging."
+
+Avoiding this level of operant conditioning and manufactured emotions is a great reason to get off Facebook and onto a platform that better respects human psychology.
+
+### Facebook doesn't care at all about our privacy and will sell every bit of data it can mine
+
+Just a handful of public data privacy breaches and investigations are enough to completely sully Facebook's name on user privacy. They don't care at all about it, despite the forced formulaic non-apology's that their senior staff routinely make in the days following that quarter's scandal.
+
+* The [Cambridge Analytica data breach](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal) in early 2018 resulted in the harvesting of millions of Facebook users' personal data without consent by Cambridge Analytica to be predominantly used for political advertising.
+
+* [Facebook makes heavy use of "shadow profiles"](https://www.theverge.com/2018/4/11/17225482/facebook-shadow-profiles-zuckerberg-congress-data-privacy)&mdash;a complete user profile for you even if you've never created a Facebook account. This profile is filled with the same set of interactions, web activity, and many other data points that apps and advertisers send to Facebook about you. It gets matched and mingled and sold to advertiers to sell you more things.
+
+* After acquiring VPN service, Onavo, Facebook quietly embedded its technology into part of their own app under the guise of user safety. It collected all mobile data traffic and [was really just spywayre](https://www.itpro.co.uk/security/30542/facebooks-protect-security-feature-is-essentially-spyware).
+
+* A decade ago [Facebook was found to be transmitting personal IDs](https://www.wsj.com/articles/SB10001424052702304772804575558484075236968) and other identifying information to advertisers through popular webgame apps.
+
+* Facebook launched ["Beacon"](https://en.wikipedia.org/wiki/Beacon_(Facebook)) all the way back in 2007 for third-party websites to send Facebook users' actions&mdash;like purchases, views, shares, and comments&mdash;back to Facebook without any knowledge or awareness.
+
+If you have a free week you can [read a massive Wikipedia page about it](https://en.wikipedia.org/wiki/Criticism_of_Facebook#Privacy_issues) with many other examples too.

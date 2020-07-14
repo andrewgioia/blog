@@ -119,9 +119,17 @@ main {
             text-transform: uppercase;
         }
 
+        h3 {
+            color: var(--text-normal-hl);
+            font-size: max(2vmax, 1.375rem);
+            margin: 2vmax 10vmin 1vmax;
+            text-align: center;
+        }
+
         // skinny elements
         p,
         ul,
+        h3,
         section,
         blockquote {
             width: min(50vmax, 100%);
@@ -200,11 +208,59 @@ main {
 
         // blockquotes
         blockquote {
-            margin: max(0.5vmax, 0.5rem) 0;
+            margin: max(1vmax, 0.75rem) 0;
 
             p {
                 border-left: 1vmax solid var(--border-normal);
                 padding-left: 2vmax;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: max(1vmax, 0.75rem) 0 max(1vmax, 0.75rem) 2vmax;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // bottom content
+    section {
+        &#author {
+            align-self: stretch;
+            display: flex;
+            justify-content: center;
+            margin-top: 5vmax;
+            position: relative;
+
+            span {
+                margin-left: 0.5vmax;
+            }
+
+            &.border {
+                border-top: max(0.25vmax, 0.25rem) solid var(--border-dark);
+                padding-top: 5vmax;
+
+                &::before {
+                    align-items: center;
+                    background: var(--bg-normal);
+                    border-radius: 100%;
+                    content: $icon-barracuda;
+                    display: block;
+                    font-family: 'andrew';
+                    font-size: max(3vmax, 2.5rem);
+                    height: max(5vmax, 4rem);
+                    justify-content: center;
+                    left: 50%;
+                    margin-left: min(-2.5vmax, -2rem);
+                    position: absolute;
+                    text-align: center;
+                    top: min(-2.5vmax, -2rem);
+                    width: max(5vmax, 4rem);
+                }
             }
         }
     }
@@ -280,7 +336,7 @@ header h1 a.back::after {
 }
 
 ul {
-    &.list {
+    &.list { // main page post list
         display: flex;
         flex-direction: column;
         list-style-type: none;
@@ -308,6 +364,32 @@ ul {
                 padding-top: 0.5vmax;
                 padding-left: 1vmax;
                 text-transform: uppercase;
+            }
+        }
+    }
+    &.tags {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+        margin: 4vmax 0;
+        padding: 0;
+        width: 100%;
+
+        li a {
+            background: var(--border-normal);
+            border-radius: 1000rem;
+            display: block;
+            font-size: max(1.25vmax, 1rem);
+            margin: 0 1vmax 2vmax;
+            padding: 1vmax 2vmax;
+
+            &:hover {
+                background: var(--link-color-normal);
+                border: none;
+                color: #fff;
             }
         }
     }

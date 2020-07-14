@@ -3,6 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
+
 <main id="post" aria-role="main">
     <aside>
         <h1>
@@ -15,7 +16,23 @@
     <article>
         {{ .Content }}
     </article>
+
+    <section id="author" class="border">
+        <i class="icon icon-feather"></i>&nbsp;
+        <span>Written by {{ .Params.author }}</span>
+        <span>on {{ .PublishDate.Format "January 2, 2006" }}</span>
+    </section>
+
+    {{ with (.Params.tags) }}
+    <ul id="tags" class="tags">
+        {{ range . }}
+            <li>
+                <a href="{{ "tags/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+            </li>
+        {{ end }}
+    </ul>
+    {{ end }}
 </main>
-{{ .TableOfContents }}
 <a id="top" class="arrow back" href="#">To the top!</a>
+
 {{ end }}

@@ -1,6 +1,8 @@
 $icon-arrow:        '\e902';
 $icon-arrow-left:   '\e904';
+$icon-barracuda:    '\e906';
 $icon-email:        '\e903';
+$icon-feather:      '\e905';
 $icon-github:       '\e900';
 $icon-mastodon:     '\e901';
 
@@ -37,8 +39,14 @@ $icon-mastodon:     '\e901';
 .icon-arrow-left:before {
     content: $icon-arrow-left;
 }
+.icon-barracuda:before {
+    content: $icon-barracuda;
+}
 .icon-email:before {
     content: $icon-email;
+}
+.icon-feather:before {
+    content: $icon-feather;
 }
 .icon-github:before {
     content: $icon-github;

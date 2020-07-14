@@ -1,5 +1,16 @@
 // media queries
 
+@media only screen and (max-width: $screen-mobile) {
+    section#author {
+        align-items: center;
+        flex-direction: column;
+        span {
+            display: block;
+            padding-bottom: 0.5vmax;
+        }
+    }
+}
+
 @media only screen and (max-width: $screen-tablet) {
     main {
         align-self: stretch;
@@ -8,6 +19,7 @@
 
         aside,
         article h2,
+        article h3,
         article p {
             margin-left: 0;
             margin-right: 0;

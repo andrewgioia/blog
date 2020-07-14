@@ -32,7 +32,8 @@
             }
         }
         article {
-            h2 {
+            h2,
+            h3 {
                 color: var(--text-dark-hl);
             }
             blockquote {
@@ -40,6 +41,16 @@
                     border-left-color: var(--border-dark);
                 }
             }
+        }
+        section#author.border::before {
+            background: var(--bg-dark);
+        }
+    }
+    ul.tags li a {
+        background: var(--border-dark);
+
+        &:hover {
+            background: var(--link-color-dark);
         }
     }
 }
