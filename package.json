@@ -4,7 +4,7 @@
   "description": "Weblog of Andrew Gioia",
   "main": "index.html",
   "dependencies": {
-    "@andrewgioia/blog": "*"
+    "@andrewgioia/blog": "^1.0.1"
   },
   "devDependencies": {},
   "scripts": {

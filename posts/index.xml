@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Andrew Gioia</title>
+    <link>https://blog.andrewgioia.com/posts/</link>
+    <description>Recent content on Andrew Gioia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.andrewgioia.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boycott Facebook, but not because it supports free speech</title>
+      <link>https://blog.andrewgioia.com/posts/facebook/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andrewgioia.com/posts/facebook/</guid>
+      <description>Of all the very rational reasons to boycott Facebook or any commercial social media platform, that &#34;its support of free speech&#34; has taken hold is alarming.
+Two obvious disclaimers first: Facebook isn&amp;rsquo;t Congress and has no legal requirement to adhere to any concept of free speech, and The Advertisers similarly may choose not to do business with Facebook for any reason at all. When I and many others talk about &amp;ldquo;free speech,&amp;rdquo; however, we pretty much always mean Free Speech, not the First Amendment: the American value, moral standard, and human right that we instinctually hold ourselves and others to.</description>
+    </item>
+    
+  </channel>
+</rss>
