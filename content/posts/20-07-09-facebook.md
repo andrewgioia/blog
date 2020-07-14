@@ -58,7 +58,7 @@ As much as I've hated to admit it, these platforms have become the place where c
 
 Commercial social media platforms have [usurped print](https://www.pewresearch.org/fact-tank/2018/12/10/social-media-outpaces-print-newspapers-in-the-u-s-as-a-news-source/) ([and even television](https://www.pewresearch.org/fact-tank/2018/12/10/social-media-outpaces-print-newspapers-in-the-u-s-as-a-news-source/)) as the primary source of news for most American young people, [despite most saying it's worse](https://www.niemanlab.org/2019/10/more-americans-than-ever-are-getting-news-from-social-media-even-as-they-say-social-media-makes-news-worse/)!
 
-If these platforms are increasingly becoming the _only_ place where voice or opinions are heard&mdash;and where public policy and political issues are presented, illuminated, and debated&mdash;they've become _de facto_ public fora and should be treated as such. [Sadly they're not yet actually treated this way](https://www.bbc.com/news/technology-51658341), but probably will be if they continue down their censorship paths.
+If these platforms are increasingly becoming the _only_ place where voice or opinions are heard&mdash;and where public policy and political issues are presented, illuminated, and debated&mdash;they've become _de facto_ public fora and should be treated as such. [Sadly they're not yet actually treated this way](https://www.bbc.com/news/technology-51658341), but hopefully will be if they continue down their censorship paths.
 
 The knee-jerk response to this has always been that "these are private companies" and they can control their private businesses however they want. [Much more eloquently](https://thehill.com/opinion/technology/456900-government-regulation-of-social-media-would-kill-the-internet-and-free):
 
@@ -76,11 +76,11 @@ These arguments sound great at first but quickly fall flat for 3 reasons:
 
    There is no requirement that we must choose between Facebook censoring lawful content or the government censoring lawful content; a third option where no one censors lawful content also exists! 
 
-   Rhetoric that presumes censorship, like "Do you trust government bureaucrats to police social media and decide whether content is too politically 'biased'?" is leading and presents a bad false dichotomy. Compelling Facebook to be content-neutral and treating it as a dump pipe does not necessitate "government bureacrats" doing the regulation. There's a reality where we police unlawful content and harassment just like everywhere else, and if we remove that presumption and the threat of scary bureacrats goes away entirely.
+   Rhetoric that presumes censorship, like "Do you trust government bureaucrats to police social media and decide whether content is too politically 'biased'?" is leading and presents a bad false dichotomy. Compelling Facebook to be content-neutral and treating it as a dump pipe does not necessitate "government bureacrats" doing the regulation. There's a reality where we police unlawful content and harassment just like everywhere else, and if we remove that presumption then the threat of scary bureacrats goes away entirely.
 
 * **Though they're private companies, they're abusing current content liability exemptions and are not being fair.**
 
-   Facebook and others have been slowly increasing their abuse of [Section 230 protections](https://www.eff.org/issues/bloggers/legal/liability/2300). They have no responsibility when their users post harmful or illegal things, ostensibly claiming that moderation is too difficult, but some will moderate content when and how they please. This has been getting worse, not better, and 
+   Facebook and others have been slowly increasing their abuse of [Section 230 protections](https://www.eff.org/issues/bloggers/legal/liability/2300). They have no responsibility when their users post harmful or illegal things, ostensibly claiming that moderation is too difficult, but some will moderate content when and how they please. This has been getting worse, not better, and as these platforms censor more and develop a voice, the case that they're not actually editors becomes absurd.
 
    While it's possible that Facebook, when told to either remain neutral or face content liability, turns the censorship dial to 11, this is probably correct and probably not all downside either. Platforms cannot have it both ways, and if they want to undergo content-level censorship and become arbiters of fact then they _should_ open themselves to liability. This would open them up to competition from new platforms, or even a publicly run platform, where content is not restricted&mdash;competition that's being stifled right now because commercial platforms get a huge advantage by having it both ways.
 
@@ -94,13 +94,15 @@ Without any action soon, commercial social media platforms will become further e
 
 Continued requests for Facebook to censor its users' content just hands them the keys to controlling acceptable topics and opinions. And as it becomes more normal for them to delete "offensive" content, we consolidate this power and come to expect it from them, giving up our own responsibility in discerning what's true and conditioning ourselves to rely on corporations to do this important work for us. 
 
-Corporations have vested interests that are often very much opposed to public interests. Their reach and dominance can quite literally make a market or sway an election. Giving corporations the power to render a search query return no results, bury a story from appearing on social media at all, hide video evidence of some event, or literally edit the content of the messages posted on their platform is frightening in its societal implications and potential for abuse. The scale of this type of censorship is unmatched and we have no control or due process over them. These are powers that no private entities should ever possess.
+Corporations have vested interests that are often very much opposed to public interests. Their reach and dominance can quite literally make a market or sway an election. Giving corporations the power to render a search query return no results, bury a story from appearing on social media at all, hide video evidence of some event, or literally edit the content of the messages posted on their platform is frightening in its societal implications and potential for abuse. The scale of this type of censorship is unmatched and we have no control or due process over them. These are powers that no private entities should ever possess, yet many are _asking_ them for this.
 
 Just as bad an outcome is that we kill our instinct to question the things that we read and see, instead assuming they've been vetted or preapproved and taking them as fact. The cost for this convenience&mdash;both consolidating this power into private groups and giving up our own judgment&mdash;is also far too high. Over time as we come to expect and await our corporate censors to approve the news we read and messages we share, we'll trust that what we do read is somehow "verified" with a comfy checkmark. There's no need to read opposing viewpoints, if they're even able to be seen. 
 
-**To be fair, it's an impossible situation for private corporations offering a public utility.** They have tremendous pressure from every angle to perform often opposing actions. Flagging a story or not flagging a story creates an opinion. Censoring "hate speech" draws a line and tacitly approves hateful things not yet banned. Banning some racism but [leaving up certain types of racism](https://www.youtube.com/watch?v=w0HkK-AmOL8) creates obvious hypocrisy. Political parties and interest groups report each others' content as fake. Enabling true free speech fosters actual debate but impinges requests for safe spaces; censorship gives users their bubble but creates groupthink and echo chambers.
+**To be fair, it's an impossible situation for private corporations offering a public utility.** 
 
-These utility-level platforms shouldn't just shouldn't just be banned from censorship for power level reasons, **they shouldn't attempt it _because it's impossible_**. It is simply an impossible balance to maintain that no private entity is equipped to handle.
+They have tremendous pressure from every angle to perform often opposing actions. Flagging a story or not flagging a story creates an opinion. Censoring "hate speech" draws a line and tacitly approves hateful things not yet forbidden. Banning some racism but [leaving up certain other types of racism](https://www.youtube.com/watch?v=w0HkK-AmOL8) creates obvious hypocrisy. Political parties and interest groups report each others' content as fake. Enabling true free speech fosters actual debate but impinges requests for safe spaces; censorship gives users their bubble but creates groupthink and echo chambers.
+
+These utility-level platforms shouldn't just be banned from censorship for power level reasons, **they shouldn't attempt it _because it's impossible_**. It is simply an impossible balance to maintain that no private entity is equipped to handle.
 
 ## A solution: decentralize and re-frame our concept of social media {#solution}
 
@@ -110,17 +112,17 @@ These utility-level platforms shouldn't just shouldn't just be banned from censo
 
 This alone is a win, but the further pipedream would be to decentralize them so that the current monopolies are one of many different ways to access content on a federated protocol. Or, at the very least, offload centralized censorship to local groups or client devices.
 
-### Social media is a toy and we should treat it that way
+### Social media is a toy and we should treat it that way {#fun}
 
 Facebook, Twitter, YouTube, and Reddit created incredibly engaging social experiences. They no doubt continue to exploit human pyschology to do so but nevertheless they've succeeded many times over in creating global communities that keep people coming back _a lot_. While they became incredibly popular, however, their authority somehow also grew with them and we've completely forgotten their founding as fun social activities. **This was a huge mistake.**
 
-These sites are fun to use but are woefully inadequate as "serious" communication tools; treating them as such and censoring content so that they can remain authoritative is a fool's errand. Re-framing them as social websites that [journalists no longer consider authoritative sources of news](https://www.cjr.org/the_media_today/journalists-on-twitter-study.php) and opinion removes much of the pressure they have to censor and regulate speech. If users stop taking it _so_ seriously the radicalizing and outrage and demands and vitriol wither. If advertisers stop taking it _so_ seriously and bending the knee to every outrage or protest, the tiny demand-making minority's undue influence also withers.
+These sites are fun to use but are woefully inadequate as "serious" communication tools; treating them as such and censoring content so that they can remain authoritative is a fool's errand. Re-framing them as social websites that [journalists no longer consider authoritative sources of news](https://www.cjr.org/the_media_today/journalists-on-twitter-study.php) and opinion removes much of the pressure they have to censor and regulate speech. If users stop taking it _so_ seriously, the radicalizing and outrage and demands and vitriol wither. If advertisers stop taking it _so_ seriously and bending the knee to every outrage or protest, the tiny demand-making minority's undue influence also withers.
 
 Delegating responsibility to maintain order onto the small local communities within them also relieves significant pressure. Reducing, instead of _maximizing_, the degrees of relationships from whom users see content keeps it more _social_ and help vastly improve the serious lack of mutual respect and basic decorum in online communication. Seeing it as fun might also help us to not get offended over everything we see. 
 
 No one petitions Snapchat or Discord or even Instagram to censor speech, in large part because they're still seen as fun, local, and social&mdash;not broad authoritative sources of information where our _president_ feels the need to make official announcements.
 
-### Decentralization, though a pipedream, is the true fix
+### Decentralization, though a pipedream, is the true fix {#decentralization}
 
 When Grandpa forwards an offensive email, Email, Inc. doesn't ban him from Email. We delete the email at first and if he starts to become too annoying we filter them, tell him to stop, or block him on our personal block list. 
 
@@ -133,10 +135,10 @@ This is federated, decentralized communication over an official protocol. There 
 ## Bonus: better reasons to #BoycottFacebook {#reasons}
 
 {{< html >}}
-<p class="big">If you've made it this far or came directly here to look for some great reasons to boycott Facebook or any commercial social media platform, here's a nonexhaustive list to get you started!</p>
+<p class="big">If you've made it this far or came directly here to look for some great reasons to boycott Facebook or any commercial social media platform, here's a nonexhaustive list to get you started 😛:</p>
 {{< /html >}}
 
-### Facebook is a giant Skinner box
+### Facebook is a giant Skinner box {#skinner}
 
 For well over a decade Facebook has been ramping up its operant conditioning to "drive engagement" and ultimately sell more ads. Every decision it makes has the end purpose of controlling eyeballs and selling more ads. A steady stream of incremental rewards&mdash;likes, emoji reactions, shares&mdash;along with little punishments like snarky replies or no comments at all modify behavior to Facebook's benefit and its users' detriment. 
 
@@ -150,7 +152,7 @@ This was evident early when the timeline was changed from purely chronological t
 
 Avoiding this level of operant conditioning and manufactured emotions is a great reason to get off Facebook and onto a platform that better respects human psychology.
 
-### Facebook doesn't care at all about our privacy and will sell every bit of data it can mine
+### Facebook doesn't care at all about our privacy and will sell every bit of data it can mine {#privacy}
 
 Just a handful of public data privacy breaches and investigations are enough to completely sully Facebook's name on user privacy. They don't care at all about it, despite the forced formulaic non-apology's that their senior staff routinely make in the days following that quarter's scandal.
 
