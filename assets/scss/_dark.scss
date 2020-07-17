@@ -15,12 +15,12 @@
             }
         }
     }
-    a {
+    a,
+    b {
         color: var(--link-color-dark);
-
-        &:not(.arrow):hover {
-            border-bottom: 2px solid var(--link-color-dark);
-        }
+    }
+    p a:hover {
+        border-bottom: 2px solid var(--link-color-dark);
     }
     main {
         aside {

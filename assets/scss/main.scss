@@ -273,14 +273,12 @@ nav {
     }
 }
 
-a {
+a,
+b {
     color: var(--link-color-normal);
+    font-style: normal;
     position: relative;
     text-decoration: none;
-
-    &:not(.arrow):hover {
-        border-bottom: 2px solid var(--link-color-normal);
-    }
 
     // novelty arrow
     &.arrow::after {
@@ -294,9 +292,9 @@ a {
         position: absolute;
         top: 0;
         right: 0;
-        -webkit-transform: translateY(-0.5rem) translateX(100%);
-        -moz-transform: translateY(-0.5rem) translateX(100%);
-        transform: translateY(-0.5rem) translateX(100%);
+        -webkit-transform: translateY(-0.25rem) translateX(100%);
+        -moz-transform: translateY(-0.25rem) translateX(100%);
+        transform: translateY(-0.25rem) translateX(100%);
         transition: opacity 150ms ease-in-out, margin-top 150ms ease-in-out;
     }
 
@@ -304,14 +302,15 @@ a {
     &.arrow.back::after {
         content: $icon-arrow-left;
         left: 0;
-        -webkit-transform: translateY(-0.5rem) translateX(-1.5rem);
-        -moz-transform: translateY(-0.5rem) translateX(-1.5rem);
-        transform: translateY(-0.5rem) translateX(-1.5rem);
+        -webkit-transform: translateY(-0.25rem) translateX(-1.25rem);
+        -moz-transform: translateY(-0.25rem) translateX(-1.25rem);
+        transform: translateY(-0.25rem) translateX(-1.25rem);
         transition: opacity 150ms ease-in-out, margin-top 150ms ease-in-out;
     }
 
     // show the arrow on hover
-    &.arrow:hover::after {
+    &.arrow:hover::after,
+    &.wa:hover b.arrow::after {
         display: block;
         margin-top: -3px;
         opacity: 100;
@@ -327,6 +326,11 @@ a {
             border: none;
         }
     }
+}
+
+// paragraph links
+p a:hover {
+    border-bottom: 2px solid var(--link-color-normal);
 }
 
 // specific link effects
