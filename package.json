@@ -11,7 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --no-source-map assets/scss/main.scss public/css/style.css",
     "watch": "sass --no-source-map --watch assets/scss/main.scss public/css/style.css",
-    "publish": "cp -R public/* /var/www/blog.andrewgioia.com/"
+    "editing": "hugo --environment development --watch=true",
+    "publish": "hugo && cp -R public/* /var/www/blog.andrewgioia.com/"
   },
   "repository": {
     "type": "git",

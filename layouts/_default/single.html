@@ -16,7 +16,8 @@
     <article>
         {{ .Content }}
     </article>
-
+</main>
+<footer id="byline">
     <section id="author" class="border">
         <i class="icon icon-feather"></i>&nbsp;
         <span>Written by {{ .Params.author }}</span>
@@ -32,7 +33,11 @@
         {{ end }}
     </ul>
     {{ end }}
-</main>
-<a id="top" class="arrow back" href="#">To the top!</a>
+    <a id="top" class="arrow back" href="#">To the top!</a>
+</footer>
+
+<div id="toc">
+    {{ .TableOfContents }}
+</div>
 
 {{ end }}

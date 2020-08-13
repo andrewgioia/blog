@@ -9,18 +9,23 @@
             padding-bottom: 0.5vmax;
         }
     }
+    #toc {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: $screen-tablet) {
     main {
         align-self: stretch;
         overflow-x: hidden; // safety for negative figure margin below
-        width: auto;
+        width: auto !important;
 
         aside,
         article h2,
         article h3,
-        article p {
+        article h4,
+        article p,
+        article blockquote {
             margin-left: 0;
             margin-right: 0;
             max-width: 100%;
@@ -29,12 +34,22 @@
         }
         article {
             ul {
-                align-self: end;
+                align-self: start;
                 padding: 0;
-                width: calc(100% - 2.5vmax);
+                width: 100%;
             }
             figure {
                 margin: 2vmax -6vmin 1vmax;
+            }
+        }
+
+        &#list {
+            // move the numbers to the top
+            section {
+                list-style-position: inside;
+                h2 {
+                    margin-top: 1vmax;
+                }
             }
         }
     }
@@ -43,6 +58,17 @@
         time {
             padding: 1vmax 0 0 0;
         }
+    }
+    #toc {
+        right: -67vw;
+        width: 67vw;
+    }
+}
+
+@media only screen and (max-width: $screen-laptop) {
+    #toc {
+        right: -50vw;
+        width: 50vw;
     }
 }
 

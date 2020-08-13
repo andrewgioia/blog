@@ -1,7 +1,12 @@
 <header>
     <h1>
         <a href="/" class="arrow back">{{ .Site.Title }}</a>
-        <span class="name">{{ .Site.Params.SubTitle }}</span><!--
+        {{ if (eq .Page.Kind "term") }}
+        <span class="name">/tags</span><!--
+        --><span class="slug">/{{ .Data.Term }}</span>
+        {{ else }}
+        <span class="name">{{ .Site.Params.Subtitle }}</span><!--
         --><span class="slug">{{ with .Params.slug }}/{{ . }}{{ end }}</span>
+        {{ end }}
     </h1>
 </header>

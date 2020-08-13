@@ -62,6 +62,10 @@ header {
 
         span {
             color: var(--text-subdued-normal);
+
+            &.slug {
+                text-transform: lowercase;
+            }
         }
     }
 }
@@ -72,14 +76,62 @@ main {
     padding: max(5vmin, 2rem) 6vmin;
     position: relative;
 
-    // sections
+    // home page
     &#home {
         padding-top: max(10vmin, 2rem);
         width: 80%;
     }
+
+    // article page
     &#post {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+    }
+
+    // list pages
+    &#list {
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+
+        h1 {
+            align-self: center;
+            font-size: max(3vmax, 2rem);
+            margin: 1vmax 0 3vmax;
+        }
+        section {
+            display: list-item;
+            list-style: decimal-leading-zero;
+            margin-bottom: max(2vmax, 1.5rem);
+
+            &::marker {
+                font-weight: 800;
+                font-size: max(2vmax, 1.5rem);
+            }
+
+            h2 {
+                font-family: $font-family-title;
+                font-size: max(2vmax, 1.5rem);
+                font-weight: 800;
+                letter-spacing: -0.05rem;
+                line-height: 1.1;
+            }
+
+            h3 {
+                font-size: max(1.375vmax, 1rem);
+            }
+
+            p {
+                font-size: max(1.375vmax, 1rem);
+                line-height: max(2vmax, 1.5rem);
+            }
+
+            // after the first one, put a top border to divide them
+            + section {
+                border-top: 0.5vmax solid var(--border-normal);
+                padding-top: max(2vmax, 1.5rem);
+            }
+        }
     }
 
     // post titles
@@ -109,7 +161,7 @@ main {
         display: flex;
         flex-direction: column;
 
-        h2 {
+        h2 { // section titles, outset width
             color: var(--text-normal-hl);
             font-size: max(2.25vmax, 1.5rem);
             font-weight: 800;
@@ -119,11 +171,20 @@ main {
             text-transform: uppercase;
         }
 
-        h3 {
+        h3 { // subsection headers, body width
             color: var(--text-normal-hl);
             font-size: max(2vmax, 1.375rem);
             margin: 2vmax 10vmin 1vmax;
             text-align: center;
+        }
+
+        h4 { // highlighted sections, left aligned and bigger
+            font-size: max(1.75vmax, 1.25rem);
+            font-weight: 500;
+            font-weight: 800;
+            line-height: max(2.5vmax, 1.75rem);
+            margin: max(1vmax, 0.75rem) 0;
+            width: min(50vmax, 100%)
         }
 
         // skinny elements
@@ -177,6 +238,7 @@ main {
             }
         }
         ul {
+            // default font-size on lists should be same as paragraphs
             li {
                 font-size: max(1.375vmax, 1rem);
                 line-height: max(2vmax, 1.5rem);
@@ -187,10 +249,11 @@ main {
             }
         }
         section {
+            // for lists inside <sections>, like FNs, we'll make it a little smaller
             ol li,
             ol li p {
-                font-size: max(1vmax, 0.75rem);
-                line-height: max(1.5vmax, 1.1rem);
+                font-size: max(1.125vmax, 0.85rem);
+                line-height: max(1.5vmax, 1.375rem);
             }
         }
 
@@ -226,9 +289,33 @@ main {
                 }
             }
         }
-    }
 
-    // bottom content
+        // post images
+        picture {
+            max-width: 80vw;
+            img {
+                width: 100%;
+            }
+        }
+
+        // captions below post images
+        figcaption {
+            padding-bottom: 2vmax;
+            font-style: italic;
+        }
+    }
+}
+
+// post footer info
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: max(5vmin, 2rem) 6vmin;
+    position: relative;
+    max-width: calc(100% - 12vmin);
+    width: 100%;
+
+    // bottom content, should be footer
     section {
         &#author {
             align-self: stretch;
@@ -267,9 +354,78 @@ main {
     }
 }
 
-nav {
-    &#TableOfContents {
-        display: none;
+section.footnotes {
+    ol {
+        margin-bottom: 0;
+        li:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+#toc {
+    background: rgba(255,255,255,0.9);
+    position: fixed;
+    top: 0;
+    right: -33vw;
+    min-height: 100vh;
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    transition: 400ms 250ms right ease-in-out;
+
+    &::before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23032140' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%0A%3E%3Cline x1='8' y1='6' x2='21' y2='6' /%3E%3Cline x1='8' y1='12' x2='21' y2='12' /%3E%3Cline x1='8' y1='18' x2='21' y2='18' /%3E%3Cline x1='3' y1='6' x2='3.01' y2='6' /%3E%3Cline x1='3' y1='12' x2='3.01' y2='12' /%3E%3Cline x1='3' y1='18' x2='3.01' y2='18' /%3E%3C/svg%3E%0A");
+        background-size: 75% 75%;
+        background-position: 0 50%;
+        background-repeat: no-repeat;
+        content: '';
+        cursor: pointer;
+        display: block;
+        height: 5vmax;
+        left: -7.5vmax;
+        position: absolute;
+        top: 2.5vmax;
+        transition-property: opacity, left;
+        transition-duration: 400ms;
+        transition-timing-function: ease-in-out;
+        transition-delay: 250ms;
+        width: 7.5vmax;
+    }
+
+    &:hover,
+    &:active {
+        right: 0;
+
+        &::before {
+            opacity: 0;
+            left: -5vmax;
+        }
+    }
+
+    nav#TableOfContents {
+        padding: 1vmax 2vmax 1vmax 1vmax;
+        height: calc(100vh - 2vmax);
+        overflow-y: auto;
+
+        ul { // first level
+            list-style: upper-roman;
+            ul { // second level
+                list-style: upper-alpha;
+                ul { // third level
+                    list-style: decimal;
+                }
+            }
+        }
+        li {
+            font-size: max(1.375vmax, 1rem);
+            line-height: max(1.75vmax, 1.375rem);
+            margin-bottom: max(1vmax, 0.75rem);
+            > a {
+                display: block;
+                margin-bottom: max(1vmax, 0.75rem);
+            }
+        }
     }
 }
 
@@ -340,6 +496,7 @@ header h1 a.back::after {
     transform: translateY(-0.5rem) translateX(min(-1.75vmax, -1.25rem));
 }
 
+// non-post lists
 ul {
     &.list { // main page post list
         display: flex;
@@ -398,6 +555,13 @@ ul {
             }
         }
     }
+}
+
+// horizontal rules
+hr {
+    border: none;
+    border-top: max(0.25vmax, 0.25rem) solid var(--border-dark);
+    margin: 3vmax 0;
 }
 
 // schemes

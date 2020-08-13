@@ -1,0 +1,27 @@
+{{ define "main" }}
+    <main id="list">
+        <h1>
+            Posts tagged as {{ .Data.Term }}
+        </h1>
+
+        {{ range .Data.Pages }}
+        <section>
+            <h2>
+                <a href="{{ .RelPermalink }}" class="wa link">
+                    <span>{{ .Title }}</span>
+                    <b class="arrow"></b>
+                </a>
+            </h2>
+            <h3>
+                Written by {{ .Params.author }} on {{ .PublishDate.Format "January 1, 2006" }}
+                &nbsp;&middot;&nbsp;
+                {{ .ReadingTime }} minute read
+            </h3>
+            <p>
+                {{ .Summary }}
+            </p>
+        </section>
+        {{ end }}
+    </main>
+
+{{ end }}

@@ -2,6 +2,23 @@ enableEmoji: true
 languageCode: en-us
 log: true
 logFile: "logs.txt"
+markup:
+  tableOfContents:
+    endLevel: 4
+    ordered: false
+    startLevel: 2
+module:
+  imports:
+    # hugo activitystream module
+    #- path: git.jlel.se/jlelse/hugo-activitystreams
+outputs:
+  home:
+    - "html" # default
+    - "rss" # default
+    #- "activity" #activitypub
+  page:
+    - "html" # default
+    #- "activity" #activitypub
 params:
   AuthorName: Andrew Gioia
   GitHubUser: andrewgioia
