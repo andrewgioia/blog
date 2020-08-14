@@ -6,7 +6,7 @@ slug: "mozilla"
 date: 2020-08-14
 publishdate: 2020-08-14
 images:
-    - post-cover.png
+    - posts/mozilla/post-cover.png
 description: I love Mozilla, I love its mission, and I love its core product, Firefox. It absolutely sucks as a business though, and its current trajectory is insolvency. Mozilla needs to focus on Firefox and core technologies, sell privacy-first software as a service, and bring back technical leadership if it truly wants to execute on its mission.
 tags: 
     - Mozilla
