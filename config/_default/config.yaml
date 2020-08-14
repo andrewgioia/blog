@@ -24,6 +24,8 @@ outputs:
     - "html" # default
     #- "activity" #activitypub
 params:
+  description: Long form thoughts on technology, fatherhood, and making things, researched and written by Andrew Gioia.
+  title: Andrew Gioia | Blog
   AuthorName: Andrew Gioia
   GitHubUser: andrewgioia
   Subtitle: /posts
