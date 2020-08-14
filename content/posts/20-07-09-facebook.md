@@ -5,6 +5,7 @@ author: Andrew Gioia
 slug: "facebook"
 date: 2020-07-09
 publishdate: 2020-07-14
+summary: Of all the very rational reasons to boycott Facebook or any commercial social media platform, that "its support of free speech" has taken hold is alarming. _"Private companies can do whatever they want"_ is problematic for many reasons, and here it's being used unfairly as a sword to compel Facebook to govern certain types of speech on its platform. **This is a huge mistake with irrevocable damage,** and if free speech as a moral guideline doesn't persuade you then the realities of voluntarily privatizing "truth arbitration" absolutely should.
 tags: 
     - Free speech
     - Privacy

@@ -1,7 +1,9 @@
 {{ define "main" }}
     <main id="list">
         <h1>
-            Posts tagged as {{ .Data.Term }}
+            <span class="hidden-mobile">Posts tagged as </span><!--
+         --><span class="tag">{{ .Data.Term }}</span><!--
+         --><span class="show-mobile"> posts</span>
         </h1>
 
         {{ range .Data.Pages }}

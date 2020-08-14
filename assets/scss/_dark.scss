@@ -33,9 +33,11 @@
             }
         }
         article {
-            h2,
-            h3 {
+            h2 {
                 color: var(--text-dark-hl);
+            }
+            h3 {
+                color: var(--h3-dark);
             }
             blockquote {
                 p {
@@ -66,5 +68,8 @@
         &:hover {
             background: var(--link-color-dark);
         }
+    }
+    span.tag {
+        background: var(--border-dark);
     }
 }

@@ -22,6 +22,8 @@
     --text-title-dark:      #{$purple-lt};
     --text-subdued-normal:  #{$tan-md};
     --text-subdued-dark:    #{$black-lt};
+    --h3-normal:            #{$teal-md};
+    --h3-dark:              #{$teal-lt};
     --screen-mobile:        #{$screen-mobile};
     --screen-tablet:        #{$screen-tablet};
     --screen-laptop:        #{$screen-laptop};
@@ -172,7 +174,7 @@ main {
         }
 
         h3 { // subsection headers, body width
-            color: var(--text-normal-hl);
+            color: var(--h3-normal);
             font-size: max(2vmax, 1.375rem);
             margin: 2vmax 10vmin 1vmax;
             text-align: center;
@@ -257,18 +259,6 @@ main {
             }
         }
 
-        // images
-        figure {
-            margin: 2vmax 10vmax 1vmax;
-
-            img {
-                width: 100%;
-            }
-            figcaption {
-                text-align: center;
-            }
-        }
-
         // blockquotes
         blockquote {
             margin: max(1vmax, 0.75rem) 0;
@@ -292,6 +282,7 @@ main {
 
         // post images
         picture {
+            margin: 1vmax 0;
             max-width: 80vw;
             img {
                 width: 100%;
@@ -300,8 +291,10 @@ main {
 
         // captions below post images
         figcaption {
-            padding-bottom: 2vmax;
+            font-size: max(1.25vmax, 0.9rem);
             font-style: italic;
+            padding: 1vmax 0 2vmax;
+            text-align: center;
         }
     }
 }
@@ -354,6 +347,7 @@ footer {
     }
 }
 
+// footnotes
 section.footnotes {
     ol {
         margin-bottom: 0;
@@ -362,17 +356,20 @@ section.footnotes {
         }
     }
 }
+a[href^="#fn:"]:before{ content: '[' }
+a[href^="#fn:"]:after{ content: ']' }
 
+// table of contents
 #toc {
     background: rgba(255,255,255,0.9);
-    position: fixed;
-    top: 0;
-    right: -33vw;
-    min-height: 100vh;
-    width: 33vw;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    position: fixed;
+    right: -35vw;
+    top: 0;
     transition: 400ms 250ms right ease-in-out;
+    width: 35vw;
 
     &::before {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23032140' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%0A%3E%3Cline x1='8' y1='6' x2='21' y2='6' /%3E%3Cline x1='8' y1='12' x2='21' y2='12' /%3E%3Cline x1='8' y1='18' x2='21' y2='18' /%3E%3Cline x1='3' y1='6' x2='3.01' y2='6' /%3E%3Cline x1='3' y1='12' x2='3.01' y2='12' /%3E%3Cline x1='3' y1='18' x2='3.01' y2='18' /%3E%3C/svg%3E%0A");
@@ -404,7 +401,7 @@ section.footnotes {
     }
 
     nav#TableOfContents {
-        padding: 1vmax 2vmax 1vmax 1vmax;
+        padding: 1vmax 3vmax 1vmax 1vmax;
         height: calc(100vh - 2vmax);
         overflow-y: auto;
 
@@ -562,6 +559,12 @@ hr {
     border: none;
     border-top: max(0.25vmax, 0.25rem) solid var(--border-dark);
     margin: 3vmax 0;
+}
+
+// extras
+span.tag {
+    background: var(--border-normal);
+    padding: 0.25vmax 1vmax;
 }
 
 // schemes

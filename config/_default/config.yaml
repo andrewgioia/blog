@@ -1,4 +1,5 @@
 enableEmoji: true
+FootnoteReturnLinkContents: 'Up'
 languageCode: en-us
 log: true
 logFile: "logs.txt"

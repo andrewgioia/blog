@@ -3,8 +3,8 @@ title: Mozilla's failures and a path to profitability
 linkTitle: Mozilla's failures and a path to profitability
 author: Andrew Gioia
 slug: "mozilla"
-date: 2020-08-11
-publishdate: 2020-08-11
+date: 2020-08-13
+publishdate: 2020-08-13
 tags: 
     - Mozilla
     - Firefox
@@ -17,7 +17,9 @@ tags:
 <p class="big">I love Mozilla, I love its mission, and I love its core product, Firefox. It absolutely sucks as a business though.</p>
 {{< /html >}}
 
-I suspected this for many years, re-realizing it every time [Hacker News](https://news.ycombinator.com/item?id=24120336) or some other story reminded me of its umbilica cord to Google. Relying on one contract to provide over 80% of its revenue[^1] every year is bad enough. Forcing itself onto a tightrope walk&mdash;privacy as a business model on one side, reliance on an _ad company_ to make payroll on the other&mdash;is critically negligent. 
+I suspected this for many years, re-realizing it every time [Hacker News](https://news.ycombinator.com/item?id=24120336) or some other story reminded me of its umbilica cord to Google. Relying on one contract to provide over 80% of its revenue[^1] every year is bad enough. Forcing itself onto a tightrope walk&mdash;privacy as a business model on one side, reliance on your _chief competitor_ (an _ad company_ no less!) to make payroll on the other&mdash;is critically negligent. 
+
+<!--more-->
 
 Despite Firefox Quantum's significant improvements over the past three years, I've felt for a while that Mozilla has been on a self-inflicted downward spiral and that the number of its eggs in one basket was symptomatic of some yet-unidentified-to-me structural issues. Its [recent blog post by CEO Mitchell Baker](https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/) and corresponding [internal memo laying off _25% of its worforce_](https://blog.mozilla.org/wp-content/uploads/2020/08/Message-to-Employees-Change-in-Difficult-Times.pdf) were so resoundingly misguided, though, that **I feared for the first time the organization is all but dead**.
 
@@ -35,21 +37,21 @@ In that time it also [lost about 80% of Firefox's browser market share](https://
 
 While it is certainly not required for nonprofits and purpose-driven organizations to sell, they do need to focus on their bottom line if they hope to continue existing. At [$14MM in 2018](https://assets.mozilla.net/annualreport/2018/mozilla-fdn-2018-short-form-final-0926.pdf), Mozilla's donations barely scratchd the surface of its $444MM expenses that year. 
 
-Without a fundraising machine, it's foolish to think Mozilla can continue to develop interesting open source software without any attempts at monetizing it or other endeavors. **It's also misguided to think that monetizing software means they've given up on their mission.** Selling software and services is its only path forward and is indeed what it wants to be doing as a mature open source software organization today.
+Without a fundraising machine, it's foolish to think Mozilla can continue to develop interesting open source software without any attempts at monetizing it or other endeavors. **It's also misguided to think that monetizing software means Mozilla has given up on its mission.** Selling software and services is its only path forward and is indeed what it wants to be doing as a mature open source software organization today.
 
-Unfortunately, instead of realizing this and leveraring its early advantage and market share in a software space _where the product is used every day all day by every human being_, Mozilla hired consistently bad leaders who set a bad direction, got lazy, and focused on the wrong things.
+Unfortunately, instead of realizing this and leveraging its early advantage and market share in a software space _where the product is used every day all day by every human being_, Mozilla hired consistently bad leaders who set a bad direction, got lazy, and focused on the wrong things.
 
 ### Mozilla sat on Firefox's lead, allowing it to get slow and bloated {#slow}
 
-I was _excited_ to switch away from Firefox in 2009 when Google Chrome became a bit more established. At that point Firefox was much, much better than Internet Explorer 7 and I took advantage of its deep extension ecosystem, but browsing still was slow, the app was very resource intensive, and like all browser, one tab crashing nuked the whole window. Chrome came out of nowhere and completely reset the expectation on browser speed and footprint. Indeed, it reset the idea of what a good browser even is.
+I was _excited_ to switch away from Firefox in 2009 when Google Chrome became a bit more established. At that point Firefox was much, much better than Internet Explorer 7 and I took advantage of its deep extension ecosystem, but browsing still was slow, the app was very resource intensive, and like all browsers, one tab crashing nuked the whole window. Chrome came out of nowhere and completely reset the expectation on browser speed and footprint. Indeed, it reset the idea of what a good browser even is.
 
 * **It was very light and fresh**, and its minimalistic interface helped make it _feel_ faster. Tabs moving to the title bar and the removal of anything extra helped the browser get out of the way as much as possible so that I could do what I wanted to do online.
 
-* **The ommnibox made search faster.** Combining the dedicated search box and URL bar created huge and unexpected performance gains for me. There was one place to do things&mdash;the universal address bar&mdash;and I didn't need to make a decision between URL and search. Firefox did help autocomplete URLs from browsing history, but it still had a dedicated search input. The omnibox removed a big step.
+* **The omnibox made search faster.** Combining the dedicated search box and URL bar created huge and unexpected performance gains for me. There was one place to do things&mdash;the universal address bar&mdash;and I didn't need to make a decision between URL and search. Firefox did help autocomplete URLs from browsing history, but it still had a dedicated search input. The omnibox removed a big step.
 
 * **Each tab had its own process.** Not only did this prevent the entire browser from crashing when one tab had a problem, it helped speed up browsing even more as there wasn't one big process for everything. 
 
-* **Incognito Mode was very useful.** Safari had apparently had this for years but I wasn't on a Mac then and Safari wasn't popular for a lot of other reasons on Windows. While very basic, Incognito windows were my first foray into internet privacy and became an easy way to load a fresh copy of a website. 
+* **Incognito Mode was very useful.** Safari had apparently had this for years but I wasn't on a Mac then and Safari wasn't popular for a lot of other reasons on Windows. While very basic, Incognito windows were my first foray into Internet privacy and became an easy way to load a fresh copy of a website. 
 
 {{< html >}}
 <picture>
@@ -65,23 +67,23 @@ I was _excited_ to switch away from Firefox in 2009 when Google Chrome became a 
 
 Firefox was without question the best browser through the early 2000s and it pushed the web forward in countless ways, often in stark contrast to Microsoft. [Firefox 3 earlier in the year was incredible](https://www.cnet.com/reviews/firefox-3-review/) and set single day download records, but the browser experience was slow and updates felt incremental and not "revolutionary." 
 
-After Chrome launched, Mozilla started playing catchup and soon began releasing updates to match or mirror Chrome, like moving its tabs up to the title bar and releasing "Private Browsing." [A review of Firefox 3.5](https://www.technologizer.com/2009/06/30/firefox-3-5-review/2/) captures the beginning of a sentiment that would swell over the next years, emphasis mine:
+After Chrome launched, Mozilla started playing catchup and soon began releasing updates to match or mirror its new rival, like moving its tabs up to the title bar and releasing "Private Browsing." [A review of Firefox 3.5](https://www.technologizer.com/2009/06/30/firefox-3-5-review/2/) captures the beginning of a sentiment that would swell over the next years, emphasis mine:
 
 > **Today’s most interesting browser isn’t Firefox&mdash;it’s Chrome**, with its spare user interface and total focus on making Web apps run seamlessly. The most feature-rich browser continues to be Opera&mdash;and with the new Unite server technology, Opera is being daring in a way that Mozilla isn’t.
 
 While Firefox 3.5 was still often recommended as "the most well-rounded browser overall," users begain saying things like "3.5’s enhancements _get Firefox back in the game_ in several areas where other browsers had jumped ahead." Speed became the number one factor and Firefox lagged, and as Chrome launched its own extensions the delta began retracting. 
 
-As Mozilla fell behind on speed and footprint, its inability to match Google's heavy advertising of Chrome sealed its fate. This is perhaps unfair as Google was able to plaster "Download Chrome!" ads on its trillions of pageviews daily, but if Mozilla had stayed hungry and leveraged its position, it could have anticipated the latent demand for a more minimal, faster, and lighter browser. It didn't and began conceeding marketshare with every Chrome release, importantly to many of the IT and tech enthusiasts who recommend and install browsers.
+As Mozilla fell behind on speed and footprint, its inability to match Google's heavy advertising of Chrome sealed its fate. This is perhaps unfair as Google was able to plaster "Download Chrome!" ads on its trillions of pageviews daily, but if Mozilla had stayed hungry and leveraged its position, it could have anticipated the latent demand for a more minimal, faster, and lighter browser. It didn't and began conceding marketshare with every Chrome release, importantly to many of the IT and tech enthusiasts who recommend and install browsers.
 
 While I've been back and loving Firefox since Quantum came out in 2017 and will not install Google Chrome on any machine my family touches, a lot of damage was done in this time period.
 
 ### Somewhere Mozilla lost its focus and has failed to innovate where it matters {#focus}
 
-**It cannot be overstated how positive a force Mozilla has been** in the worlds of open source software and Internet freedom. Their contributions over the past two decades are too numerous to list in full, but to highlight a few: recent technologies like [Rust](https://www.rust-lang.org/), [Web Assembly](https://webassembly.org/), and [Servo](https://servo.org/) are really innovative and promising technologies; its contributions to JavaScript, WebGL, and open codecs like AV1 have been critical; even the MDN web docs are an absolutely wonderful resource.
+**It cannot be overstated how positive a force Mozilla has been** for open source software and Internet freedom. Their contributions over the past two decades are too numerous to list in full, but to highlight a few: recent technologies like [Rust](https://www.rust-lang.org/), [Web Assembly](https://webassembly.org/), and [Servo](https://servo.org/) are really innovative and promising web foundations; its contributions to JavaScript, WebGL, and open codecs like AV1 have been critical; even the MDN web docs are an absolutely wonderful resource.
 
-Over the past decade, though, a lot of its innovation on core products and services was uninspired at best while some, like Thunderbird, were left to rot. The only _relevant_ innovations I can even think of off the top of my head have been FirefoxOS, its promising but failed mobile operating system, and multi-account containers, an actual gamechanger in browsing but really the only homerun there. 
+Over the past decade, though, a lot of its innovation on core products and services was uninspired at best while some, like Thunderbird, were left to rot. The only _relevant_ innovations I can even think of off the top of my head have been Firefox OS, its promising but failed mobile operating system, and multi-account containers, an actual gamechanger in browsing but really the only homerun there. 
 
-Mozilla bet heavily on Firefox OS and under proper management it could have been _the_ community-driven, open source mobile OS with open standards and APIs and a competing app store. The dream. It _still_ could be a phone I'd be happy to switch to, just as I was eager to then had a proper handset shipped. [It lasted less than 4 years](https://www.cnet.com/news/why-the-death-of-the-firefox-phone-matters/), due in no small part to [their new CEO misunderstanding it](https://medium.com/@bfrancis/the-story-of-firefox-os-cb5bf796e8fb), among other issues.
+Mozilla bet heavily on Firefox OS and under proper management it could have been _the_ community-driven, open source mobile OS with open standards and APIs and a competing app store. The dream. It _still_ could be a phone I'd be happy to switch to, just as I was eager to at the time, had a proper handset shipped. [It lasted less than 4 years](https://www.cnet.com/news/why-the-death-of-the-firefox-phone-matters/), due in no small part to [their new CEO misunderstanding it](https://medium.com/@bfrancis/the-story-of-firefox-os-cb5bf796e8fb), among other issues.
 
 There have been a lot of distractions during this time as well that have peeled resources away from their foundational product: strange partnerships that send data to third parties (even Google Analytics), social advocacy on issues that have nothing to do with the Internet, and bets on trendy technologies that have gone nowhere.
 

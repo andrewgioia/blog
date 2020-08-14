@@ -12,6 +12,9 @@
     #toc {
         display: none;
     }
+    .hidden-mobile {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: $screen-tablet) {
@@ -69,6 +72,12 @@
     #toc {
         right: -50vw;
         width: 50vw;
+    }
+}
+
+@media only screen and (min-width: $screen-tablet) {
+    .show-mobile {
+        display: none;
     }
 }
 
