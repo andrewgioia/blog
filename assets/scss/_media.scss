@@ -42,7 +42,11 @@
                 width: 100%;
             }
             figure {
-                margin: 2vmax -6vmin 1vmax;
+                margin: 2vmax -6vmin 1vmax; // move images outward
+                max-width: 100vw;
+                figcaption {
+                    margin: 0 12vmin;
+                }
             }
         }
 

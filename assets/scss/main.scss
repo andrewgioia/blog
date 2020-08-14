@@ -281,9 +281,10 @@ main {
         }
 
         // post images
-        picture {
+        figure {
             margin: 1vmax 0;
             max-width: 80vw;
+            picture,
             img {
                 width: 100%;
             }

@@ -13,24 +13,18 @@ tags:
     - Internet
 ---
 
-{{< html >}}
 <p class="big">
 Of all the very rational <a href="#reasons">reasons to boycott Facebook</a> or any commercial social media platform, <a href="https://news.ycombinator.com/item?id=23627905" target="blank">that "its support of free speech" has taken hold</a> is alarming.</p>
-{{< /html >}}
 
 **Two obvious disclaimers first:** Facebook isn't Congress and has no legal requirement to adhere to any concept of free speech, and The Advertisers similarly may choose not to do business with Facebook for any reason at all. When I and many others talk about "free speech," however, we pretty much always mean Free Speech, not the First Amendment: the American value, moral standard, and human right that we instinctually hold ourselves and others to. 
 
-{{< html >}}
 <p class="swqm"><em>"Private companies can do whatever they want"</em> is problematic for many reasons, and here it's being used unfairly as a sword to compel Facebook to govern certain types of speech on its platform. <strong>This is a huge mistake with irrevocable damage,</strong> and if free speech as a moral guideline doesn't persuade you then the realities of voluntarily privatizing "truth arbitration" absolutely should.</p>
-{{< /html >}}
 
 The answer is simple on its face but difficult given the decade of operant conditioning Facebook and others have been perfecting: **correct and re-frame how we consider and use social media in the first place**.
 
 ## Problem 1: it's way too hard to determine what's "true" and what's "fake" {#arbitrate}
 
-{{< html >}}
 <p class="big">Social media by design cannot arbitrate truth, and any path with this as its goal is necessarily doomed.</p>
-{{< /html >}}
 
 At some point Facebook, Twitter, YouTube, and Reddit graduated from personal networks to global platforms that broadcast millions of messages to millions of people every day. Though we still do not admit this, it was at this point they also transformed into _communication platforms_: core communication infrastructural architecture. Facebook became a phone carrier, and if Verizon can't and doesn't police the content on its phone lines, Facebook shouldn't either. 
 
@@ -43,17 +37,13 @@ It's unfortunately just impossible though. Two rational adults at opposing ends 
 
 This doesn't even approach actual content examples and nuances. If one of those 12 actually is true is the entire article deemed fake? Does Facebook redact it? When do creative omissions in long quotes or testimony go from "helpful clarity" to "outright misrepresentation"? If a [news outlet describes a presidential speech as "divisive"](https://www.nytimes.com/2020/07/03/us/politics/trump-coronavirus-mount-rushmore.html) but a moderator or large group of users feel differently, is that article "true" or "fake?" Who decides if a message is merely satire or an actual actionable threat or call to violence?
 
-{{< html >}}
 <p class="swqm"><em>"But just because it's hard shouldn't mean we don't try. Plus, machine learning and 'algorithms' can do the work of a thousand human moderators."</em></p>
-{{< /html >}}
 
 Determining truth is a problem legal systems have dealt with for millenia and ours has only "recently" arrived at an expensive, adversarial, intensely thorough, and months-long effort with a due process backbone and an ultimate unanimous determination by 12 other humans. This is obviously the extreme as lives can be on the line, and merely deciding to nuke certain news stories pales in comparison, but **this is how hard it is to reliably determine truth!** We aren't remotely close to handing this over to machines.
 
 ## Problem 2: commercial social media platforms have become the new public square {#public-fora}
 
-{{< html >}}
 <p class="big">Facebook, Twitter, YouTube, and Reddit are not just carriers, <strong>they're also the town square, courthouse steps, public parks, and shopping malls</strong>. They should not regulate content because of this, and hopefully one day they won't be able to.</p>
-{{< /html >}}
 
 As much as I've hated to admit it, these platforms have become the place where communication happens. People assume to find information here. Our president first tweets official state announcements. If a video isn't on YouTube, outside of certain niches it may as well not exist. 
 
@@ -89,9 +79,7 @@ Without any action soon, commercial social media platforms will become further e
 
 ## Problem 3: private companies should not unilaterally decide acceptable public speech {#forfeit}
 
-{{< html >}}
 <p class="big">Perhaps the most confusing aspect of The Advertisers Boycott, as well as much of the defense of social media censorship over the past few years, is that <strong>we're voluntarily forfeiting centuries of speech protections</strong> into the hands of an oligopoly beholden only to the interests of their shareholders and officers.</p>
-{{< /html >}}
 
 Continued requests for Facebook to censor its users' content just hands them the keys to controlling acceptable topics and opinions. And as it becomes more normal for them to delete "offensive" content, we consolidate this power and come to expect it from them, giving up our own responsibility in discerning what's true and conditioning ourselves to rely on corporations to do this important work for us. 
 
@@ -107,9 +95,7 @@ These utility-level platforms shouldn't just be banned from censorship for power
 
 ## A solution: decentralize and re-frame our concept of social media {#solution}
 
-{{< html >}}
 <p class="big">Social media platforms should revert to just that: <em>social</em> communication channels and communities to share media and information, concomitant with a reevaluation of them as leisure activities, not authoritative sources.</p>
-{{< /html >}}
 
 This alone is a win, but the further pipedream would be to decentralize them so that the current monopolies are one of many different ways to access content on a federated protocol. Or, at the very least, offload centralized censorship to local groups or client devices.
 
@@ -135,9 +121,7 @@ This is federated, decentralized communication over an official protocol. There 
 
 ## Bonus: better reasons to #BoycottFacebook {#reasons}
 
-{{< html >}}
 <p class="big">If you've made it this far or came directly here to look for some great reasons to boycott Facebook or any commercial social media platform, here's a nonexhaustive list to get you started 😛:</p>
-{{< /html >}}
 
 ### Facebook is a giant Skinner box {#skinner}
 

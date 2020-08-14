@@ -3,8 +3,8 @@ title: Mozilla's failures and a path to profitability
 linkTitle: Mozilla's failures and a path to profitability
 author: Andrew Gioia
 slug: "mozilla"
-date: 2020-08-13
-publishdate: 2020-08-13
+date: 2020-08-14
+publishdate: 2020-08-14
 tags: 
     - Mozilla
     - Firefox
@@ -13,9 +13,7 @@ tags:
     - Business
 ---
 
-{{< html >}}
 <p class="big">I love Mozilla, I love its mission, and I love its core product, Firefox. It absolutely sucks as a business though.</p>
-{{< /html >}}
 
 I suspected this for many years, re-realizing it every time [Hacker News](https://news.ycombinator.com/item?id=24120336) or some other story reminded me of its umbilica cord to Google. Relying on one contract to provide over 80% of its revenue[^1] every year is bad enough. Forcing itself onto a tightrope walk&mdash;privacy as a business model on one side, reliance on your _chief competitor_ (an _ad company_ no less!) to make payroll on the other&mdash;is critically negligent. 
 
@@ -29,9 +27,7 @@ I use Firefox all day and recommend it. I pay for their limited VPN offering to 
 
 ## Mozilla is bad at business {#business}
 
-{{< html >}}
 <p class="big">After over 2 decades as one of the founding Internet companies, Mozilla has shipped essentially one profitable product: Firefox.</p>
-{{< /html >}}
 
 In that time it also [lost about 80% of Firefox's browser market share](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers)[^2] and abandoned its only two other potentially profitable ones, Thunderbird[^3] and Firefox OS.
 
@@ -53,17 +49,20 @@ I was _excited_ to switch away from Firefox in 2009 when Google Chrome became a 
 
 * **Incognito Mode was very useful.** Safari had apparently had this for years but I wasn't on a Mac then and Safari wasn't popular for a lot of other reasons on Windows. While very basic, Incognito windows were my first foray into Internet privacy and became an easy way to load a fresh copy of a website. 
 
-{{< html >}}
-<picture>
-  <source 
-    srcset="firefox-chrome-2009@dark.png" 
-    media="(prefers-color-scheme: dark)">
-  <img src="firefox-chrome-2009@light.png" alt="Firefox and Chrome in 2009" class="outset">
-</picture>
-<figcaption>
-    Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008.
-</figcaption>
-{{< /html >}}
+<figure>
+    <picture>
+      <source 
+        srcset="firefox-chrome-2009@dark.png" 
+        media="(prefers-color-scheme: dark)">
+      <img src="firefox-chrome-2009@light.png" 
+           alt="Firefox and Chrome in 2009" 
+           title="Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008."
+           class="outset">
+    </picture>
+    <figcaption>
+        Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008.
+    </figcaption>
+</figure>
 
 Firefox was without question the best browser through the early 2000s and it pushed the web forward in countless ways, often in stark contrast to Microsoft. [Firefox 3 earlier in the year was incredible](https://www.cnet.com/reviews/firefox-3-review/) and set single day download records, but the browser experience was slow and updates felt incremental and not "revolutionary." 
 
@@ -93,7 +92,7 @@ While these trendier areas siphoned resources, Mozilla began playing catchup on 
 
 ### The company has a phobia for monetization {#phobia}
 
-Selling valuable software and services does not at all necessitate Mozilla compromising on its mission or values. It's a perfectly respectable (and welcome!) path for any nonprofit or FOSS organization and there's been a growing trend with for-profit open source selling support or other addons, normalizing this even more. 
+Selling valuable software and services does not at all necessitate Mozilla compromising on its mission or values. It's a perfectly respectable (and welcome!) path for any nonprofit or FOSS organization and there's been a growing trend with for-profit open source organizations selling support or other addons, normalizing this even more. 
 
 For some reason Mozilla has only recently dipped its toes into a booming SaaS world. These are the only products I can currently give Mozilla money for:
 
@@ -117,9 +116,9 @@ I won't pretend to be an expert on the internal politics at Mozilla or a lot of 
 
 #### Mozilla has a massive cultural problem if its CEO thinks it's okay to defame a deceased coworker. {#baker}
 
-My first real inclination that Mozilla has problems was when its CEO, Mitchell Baker, wrote a [blog post in memory of Mozilla's first intern, Gervase Markham](https://blog.lizardwrangler.com/2018/08/07/in-memoriam-gervase-markham/). Baker wrote things that are strange to even think, let alone say quietly to close friends, let alone _publish online for everyone to read_.
+My first real inclination that Mozilla has problems was when its CEO, Mitchell Baker, wrote a [blog post in memory of Mozilla's first intern, Gervase Markham](https://blog.lizardwrangler.com/2018/08/07/in-memoriam-gervase-markham/). Baker wrote things that are strange to even think about a recently deceased coworker, let alone say quietly to close friends, let alone _publish online for everyone to read_.
 
-For a CEO to defame a deceased coworker who battled cancer&mdash;particularly one as consequential as their very first intern!&mdash;speaks volumes about the company culture and toxicity in that workplace to create an environment where this is normal. 
+For a CEO to defame someone in the organization who lost his battle with cancer&mdash;particularly one as consequential as their very first intern!&mdash;speaks volumes about the company culture and workplace toxicity that would create an environment where this is normal. 
 
 > Eventually Gerv felt called to live his faith by publicly judging others in politely stated but damning terms. His contributions to expanding the Mozilla community would eventually become shadowed by behaviors that made it more difficult for people to participate....
 >
@@ -137,39 +136,37 @@ Brendan Eich was one of the [co-founders of the original Mozilla](https://en.wik
 
 [Mozilla was assuredly aware of this](https://news.ycombinator.com/item?id=3793012) yet did not have the foresight or experience to anticipate it. [He resigned 11 days later](https://blog.mozilla.org/blog/2014/04/03/brendan-eich-steps-down-as-mozilla-ceo/), choosing to leave instead of finding a new role, later founding a competeing browser, [Brave](https://brave.com).
 
-Eich felt he could not "be an effective leader" of Mozilla given a personal belief unrelated to Mozilla's mission, products, or business. Mozilla not only allowed, but presumably compelled to leave one of the smartest minds and biggest contributors to open source software and Internet freedom. Mozilla could not balance personal and professional spheres and did not have the organizational integrity to support such a leader despite his views that some people find very objectionable. 
+Eich felt he could not "be an effective leader" of Mozilla given a personal belief unrelated to Mozilla's mission, products, or business. Mozilla not only allowed, but presumably compelled to leave one of the smartest minds and biggest contributors to open source software and Internet freedom. Mozilla could not balance personal and professional spheres, and it did not have the organizational integrity to support such a leader despite his views that some people find very objectionable.
 
 Mozilla won nothing and institutionalized a social litmus test, no doubt turning away many potential highly qualified leaders and developers.
 
-[The comment on Hacker News by will4274](https://news.ycombinator.com/item?id=24123409) that prompted me to think and write about this captures many other aspects of Mozilla's leadership problems much better than I could know or articulate:
+[The comment on Hacker News by will4274](https://news.ycombinator.com/item?id=24123409) that prompted me to think and write about Mozilla captures many other aspects of Mozilla's leadership problems much better than I could know or articulate (emphasis mine):
 
-> Mozilla, like Debian, has many technical users with loud opinions and struggles to reach consensus.... But, Mozilla has the worst result - "logjam breaker" executives come in, and, rather than pushing the technical leadership to make a reasonable technical decision based on the weighed factors, they break the logjam by encouraging the technical leaders to blindly imitate the competition. This problem is intractable - giving in to the Debianers means being mired in debate forever and making no or extremely slow progress; giving in to the suits means failing to innovate, becoming a clone of your competition, and eventually being forgotten. A true solution requires real technical leadership, something that's sorely lacking at Mozilla, or a different user base, which is not a possibility at Mozilla.
+> Mozilla, like Debian, has many technical users with loud opinions and struggles to reach consensus.... But, Mozilla has the worst result&mdash;"logjam breaker" executives come in, and, rather than pushing the technical leadership to make a reasonable technical decision based on the weighed factors, they break the logjam by encouraging the technical leaders to blindly imitate the competition. This problem is intractable&mdash;giving in to the Debianers means being mired in debate forever and making no or extremely slow progress; giving in to the suits means failing to innovate, becoming a clone of your competition, and eventually being forgotten. **A true solution requires real technical leadership, something that's sorely lacking at Mozilla,** or a different user base, which is not a possibility at Mozilla.
 >
 > Second, ... [n]on-technical leadership comes to dominate decisions about how to [spend] incoming donations from successful technical projects. Such leadership is often interested in [hopping] from the board of one non-profit to another.... The results [are] a slew of failed and cancelled projects while the core project languishes.
 >
-> Finally, ... [m]ost companies right now are on social justice kick and for the last few years. That's good; racism is bad, and tech could be a bit more welcoming. However, most companies understand where the lines are drawn. For example, Google executives don't release statements after employees die trashing the employee because of an underlying difference in personality and/or political views. Google also doesn't fire executives because of their political views or previous donations, when held privately, particularly when those political views are relatively common. Such actions have a chilling effect on recruitment and leads to technical talent [who] might otherwise have been interested in Mozilla (like myself) to permanently write it off.
+> Finally, ... [m]ost companies right now are on a social justice kick and for the last few years. That's good; racism is bad, and tech could be a bit more welcoming. However, most companies understand where the lines are drawn. For example, Google executives don't release statements after employees die trashing the employee because of an underlying difference in personality and/or political views. Google also doesn't fire executives because of their political views or previous donations, when held privately, particularly when those political views are relatively common. **Such actions have a chilling effect on recruitment** and leads to technical talent [who] might otherwise have been interested in Mozilla (like myself) to permanently write it off.
 
 Mozilla has chosen social advocacy over technical leadership and has reduced itself to maintaining Firefox rather than navigate an innovative path forward.
 
 ## A (proven) path forward: Mozilla as a privacy-focused SaaS company that sells well-designed software in exchange for dollars {#solution}
 
-{{< html >}}
 <p class="big">There's a shockingly simple solution to all of the non-leadership problems Mozilla has: make Firefox the best browser in the world and sell privacy-first, open source software-as-a-service that respects our integrity.</p>
-{{</ html >}}
 
 ### Mozilla should first focus on its core product: Firefox {#firefox}
 
-The primary all-hands-on-deck operative should be to decouple Firefox from Mother Google. An ad company toxic to the web that needs user data to build tracking profiles for Mozilla's users is diametrically opposed to its mission and ethos. And for some reason _that's_ totally fine but Eich's past isn't?
+The primary all-hands-on-deck imperative should be to decouple Firefox from Mother Google. Mozilla's chief competitor and an ad company toxic to the web&mdash;one that needs user data to build tracking profiles for Mozilla's users&mdash;is diametrically opposed to its mission and ethos. And for some reason _that's_ totally fine but Eich's past isn't?
 
-Google is the only one paying Mozilla's bills right now and that cannot be understated, but everything the company does needs to move it away from Google or any search sponsor by 2025. This is primarily for business reasons and diversification, but just as important it fixes Mozilla's hypocrisy and gets it some trust back.
+Google is the only one paying Mozilla's bills right now and that lifeline cannot be understated, but everything the company does needs to move it away from Google or any search sponsor by 2025. This is primarily for business reasons and diversification, but just as important it fixes Mozilla's hypocrisy and gets it some trust back.
 
-Related to this, Mozilla just needs to pump more resources into Firefox itself. Make it so fast and light that it's a "no brainer" for even the layman to switch to over Chrome. Release polished, vetted, useful extensions and pay the best community developers donating their time. Even better: build [uBlock Origin](https://ublockorigin.com/)-style ad blocking as a native feature. Apple realized this years ago but as Chrome's parent forces it to whittle away at tracking prevention and privacy features, Firefox gains an immense competitive advantage. 
+Related to this, Mozilla just needs to pump more resources into Firefox itself. Make it so fast and light that it's a "no brainer" for even the layman to switch to over Chrome. Release polished, vetted, useful extensions and pay the best community developers donating their time. Even better: build [uBlock Origin](https://ublockorigin.com/)-style ad blocking as a native feature. Apple realized this advantage years ago and as Chrome's parent forces it to whittle away at tracking prevention and privacy features, Firefox can gain an even bigger competitive advantage. 
 
 In 2 years Firefox should again become the obvious browser on speed, performance, memory management, privacy, and customization/user control. Mozilla should double down on the tech enthusiasts and family IT support specialists who formed its base; they're the ones who often recommend and install browsers for many others. Building up the userbase again via a free powerful Firefox creates a bigger captive audience for services.
 
-### Mozilla should then release rock-solic privacy-first data services that people already want to pay for {#saas}
+### Mozilla should then release rock-solid privacy-first data services that people already want to pay for {#saas}
 
-Mozilla's primary source of revenue in 5 years should be from services. Apple saw this years ago and built up their services segment to about $14B per quarter now, over 20% of its total revenue. It did this due to, in no small part, its focus on privacy. Mozilla is perfectly positioned to do this even better, selling data services that people are already paying for, at scale and with a massive privacy focus. 
+Mozilla's primary source of revenue in 5 years should be from services. Apple saw this years ago and built up their services segment to about $14B per quarter now, over 20% of its total revenue. It did this due to, in no small part, its focus on privacy. Mozilla is perfectly positioned to do this even better, selling data services that people are already paying for, at scale, and with a massive privacy focus. 
 
 Mozilla should release services in all of these areas:
 
@@ -183,7 +180,7 @@ Mozilla should release services in all of these areas:
 
 * **S3-compatible storage:** I pay Backblaze right now for large S3 storage to backup my documents and home media from my Synology NAS. Backblaze is great but I would pay Mozilla for this to support them and their mission. **$10-20/month.**
 
-* **Video hosting:** this is going to cost a ton of money to do correctly but I would love a Vimeo-style video hosting service by Mozilla. If this integrated with S3 buckets to share media, even better. **$10/month.**
+* **Video hosting:** this is going to cost a ton of money to do correctly but I would love a Vimeo-style video hosting service by Mozilla. I like Vimeo but I want to support Mozilla more, and if this integrated with S3 buckets to share media, even better. **$10/month.**
 
 All of these need to be built privacy-first, backed by Mozilla's brand and mission statement. My family would move about $50/month we're already spending and probably more for document sync as I'm not using anything for that right now.
 
@@ -191,17 +188,19 @@ After this, Mozilla should leverage its new experience in delivering services an
 
 ### Mozilla's north star should be "the Internet's much-needed infrastructure" to fully execute on its mission {#northstar}
 
-GMail should not synonymous with email, YouTube should not be "where videos are stored," and [Twitter and Facebook should definitely not be where public discourse takes place](/posts/facebook). All of these services are "core infrastructural" web services that should not be controlled by private for-profit ad companies. It's a complete misalignment of importance and trust and Mozilla should take this on just as Wikipedia has with knowledge.
+Gmail should not synonymous with email, YouTube should not be "where videos are stored," and [Twitter and Facebook should definitely not be where public discourse takes place](/posts/facebook). All of these services are "core infrastructural" web services that should not be controlled or dominated by private for-profit ad companies with zero competition. It's a complete misalignment of importance and trust and Mozilla should take this on just as Wikipedia has with knowledge.
 
-Mozilla's "final form" should ultimately be the primary builder and custodian of our decentralized and federated Internet infrastructure. I can think of no higher value accomplishment that would completely "ensure the Internet is a global public resource, open and accessible to all."
+Mozilla's "final form" should ultimately be the primary builder and steward of our decentralized and federated Internet infrastructure&mdash;the counter to the private ones that are currently de facto. I can think of no higher accomplishment that would completely "ensure the Internet is a global public resource, open and accessible to all."
 
-"Oh yeah, just make a social network 🙄" or "lose $10B per year on hosting 5 trillion cat videos" is not the idea. The idea is to make a more purposeful, federated content host to provide a viable alternative to the private ad-supported monopolies. Supporting the mission and/or paying for power features or additional storage can offset this, as could building in a creator-first revenue sharing arrangement.
+<p class="swqm"><em>"Oh yeah, just make a social network</em> 🙄<em>"</em> or <em>"lose $10B per year on hosting 5 trillion cat videos"</em> is not the idea. The idea is to make a more purposeful, federated content host to provide a viable alternative to the private ad-supported monopolies. Supporting the mission and/or paying for power features or additional storage can offset this, as could building in a creator-first revenue sharing arrangement.</p>
 
-This should sound crazy because it _is_ crazy&mdash;this is the long term goal and would be an unbelievable accomplishment. Having an actual, tangible north star like this can also serve to rally and direct the team and its users. Currently Mozilla has no real definition of success or anything tangible to point to.
+This should sound crazy because it _is_ crazy&mdash;this is the long term goal and would be an unbelievable coup. Having an actual, tangible north star like this can also serve to rally and direct the team and its users. Currently Mozilla has no real definition of success or anything tangible to point to.
 
 ## A moderate warning: Mozilla _is_ losing necessary trust with the libre world, its core demographic {#trust}
 
+<p class="big">
 Mitchell Baker's unfocused blog post on Mozilla's focus ended by saying they're "fortunate that Firefox and Mozilla retain a high degree of trust in the world." This is true to a certain extent and I very much would trust Mozilla to deliver privacy-focused services and software, but there's a limit to it and Mozilla is actually approaching that.
+</p>
 
 Mozilla only has so many chances before its core base gives up and the whole organization unravels. On its current trajectory&mdash;firing important teams like Servo and MDN and promoting the aimless VR stuff&mdash;this trust will begin waning and someone else will take up the cause.
 
@@ -211,11 +210,13 @@ Mozilla only has so many chances before its core base gives up and the whole org
 
 **When talking about the "new mindset,"** she starts by describing everything great about the Internet ("the decentralization, ... open source underpinnings, and the standards") and then immediately goes into a "but." Why must Mozilla shift anything to enable these? Why is she saying Mozilla won't be "trying to keep a piece of what we love" anymore, is it no longer defending decentralization? Why is she again talking about "advocacy"?
 
-**When talking about community** and their volunteer developers, why does Baker link to a video on "transforming prison communities" as an example of what they need to be doing?
+**When talking about community** and their volunteer developers, why does Baker link to a video on "transforming prison communities" as an example of what they need to be doing? This is great but how about their _developer community_ first?
 
-The **focus on economics** is about the only thing I agree with in this manifesto. "Recognizing that the old model where everything was free has consequences, means we must explore a range of different business opportunities and alternate value exchanges." This is correct and they do need to experiment with their business model. 
+The **focus on economics** is about the only thing I agree with in this manifesto. "Recognizing that the old model where everything was free has consequences, means we must explore a range of different business opportunities and alternate value exchanges." This is correct and they do need to experiment with their business model. I'm very curious to see how they begin to put this into practice.
 
-**Mozilla needs a visionary leader with a strong technical background and Baker isn't it.** Her blog post, the layoffs, and the internal memo did more to worry me about Mozilla's future than any other decision or event in Mozilla's long history. Mozilla still does have our trust now, but it's on a path to losing it and its current CEO will almost assuredly take it there if left unchecked. 
+#### Mozilla needs a visionary leader with a strong technical background and Baker isn't it.
+
+Her blog post, the layoffs, and the internal memo did more to worry me about Mozilla's future than any other decision or event in Mozilla's long history. Mozilla still does have our trust now, but it's on a path to losing it and its current CEO will almost assuredly take it there if left unchecked and without better technical and business leadership.
 
 [^1]: This is tough to estimate and [official numbers stop at 2011](https://en.wikipedia.org/wiki/Mozilla_Corporation#Google) where it was 85% of all revenue. We do know that Yahoo paid Mozilla $375MM annually from 2015 to 2017 to become the default search engine in Firefox, and that Mozilla exercised its right to terminate that contract when Oath bought Yahoo, at which point Google became the default again. Presumably the new Google deal was around this amount, though it's arguable either way given Firefox's declining userbase on one hand, and on the other that it was so eager to nuke the Yahoo deal and that Yahoo fought back. 
 

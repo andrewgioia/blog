@@ -1,9 +1,12 @@
 enableEmoji: true
-FootnoteReturnLinkContents: 'Up'
+footnoteReturnLinkContents: "↑" # doesn't work with goldmark yet
 languageCode: en-us
 log: true
 logFile: "logs.txt"
 markup:
+  goldmark:
+    renderer:
+      unsafe: true # renders embedded html
   tableOfContents:
     endLevel: 4
     ordered: false
