@@ -1,6 +1,6 @@
 {
   "name": "@andrewgioia/blog",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Longer form content by Andrew Gioia",
   "main": "public/index.html",
   "dependencies": {
@@ -11,8 +11,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --no-source-map assets/scss/main.scss public/css/style.css",
     "watch": "sass --no-source-map --watch assets/scss/main.scss public/css/style.css",
+    "tidy": "tidy -config tidy.conf -mq public/**/*.html",
     "editing": "hugo --environment development --watch=true",
-    "publish": "hugo && cp -R public/* /var/www/blog.andrewgioia.com/"
+    "publish": "hugo && tidy -config tidy.conf -mq public/**/*.html && sass --no-source-map assets/scss/main.scss public/css/style.css && cp -R public/* /var/www/blog.andrewgioia.com/"
   },
   "repository": {
     "type": "git",
