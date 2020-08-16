@@ -1,75 +1,28 @@
 // dark mode preference
 @media (prefers-color-scheme: dark) {
-    body {
-        background: var(--bg-dark);
-        color: var(--text-dark);
+    :root {
+        --background:           #{$black-dk};
+        --background-accent:    #{$black-md};
+        --border-accent:        #{$gray-md};
+        --border-subdued:       #{$black-md};
+        --link-color:           #{$blue-lt};
+        --text-color:           #{$gray-lt};
+        --text-color-accent:    #{$white};
+        --text-color-subdued:   #{$black-lt};
+        --text-title-title:     #{$purple-lt};
+        --text-color-h3:        #{$teal-lt};
     }
-    header {
-        border-top-color: var(--border-dark);
-        h1 {
-            a {
-                color: var(--text-dark-hl);
-            }
-            span {
-                color: var(--text-subdued-dark);
-            }
-        }
-    }
-    a,
-    b {
-        color: var(--link-color-dark);
-    }
-    p a:hover {
-        border-bottom: 2px solid var(--link-color-dark);
-    }
-    main {
-        aside {
-            h1 {
-                background: var(--text-title-dark);
-                background: linear-gradient(135deg, $blue-lt 0%, $purple-lt 67%);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-            }
-        }
-        article {
-            h2 {
-                color: var(--text-dark-hl);
-            }
-            h3 {
-                color: var(--h3-dark);
-            }
-            blockquote {
-                p {
-                    border-left-color: var(--border-dark);
-                }
-            }
-        }
-        &#list {
-            section + section {
-                border-top-color: var(--border-dark);
-            }
-        }
-    }
-    footer {
-        section#author.border::before {
-            background: var(--bg-dark);
-        }
+    main aside h1 {
+        background: var(--text-color-title);
+        background: linear-gradient(135deg, $blue-lt 0%, $purple-lt 67%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     #toc {
         background: rgba(0,0,0,.75);
         &::before {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23d6d7df' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%0A%3E%3Cline x1='8' y1='6' x2='21' y2='6' /%3E%3Cline x1='8' y1='12' x2='21' y2='12' /%3E%3Cline x1='8' y1='18' x2='21' y2='18' /%3E%3Cline x1='3' y1='6' x2='3.01' y2='6' /%3E%3Cline x1='3' y1='12' x2='3.01' y2='12' /%3E%3Cline x1='3' y1='18' x2='3.01' y2='18' /%3E%3C/svg%3E%0A");
         }
-    }
-    ul.tags li a {
-        background: var(--border-dark);
-
-        &:hover {
-            background: var(--link-color-dark);
-        }
-    }
-    span.tag {
-        background: var(--border-dark);
     }
 }
