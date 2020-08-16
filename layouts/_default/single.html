@@ -6,6 +6,9 @@
 
 <main id="post" aria-role="main">
     <aside>
+        {{ with (.Params.banner) }}
+        <img src="{{ . }}" id="banner">
+        {{ end }}
         <h1>
             {{ .Title }}
         </h1>

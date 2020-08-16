@@ -135,6 +135,12 @@ main {
         margin: 0 7.5vmin max(2vmax, 1rem);
         text-align: center;
 
+        img#banner {
+            display: none; // only showing this on phones
+            margin: 0 -6vmin 10vmin;
+            width: calc(100% + 12vmin);
+        }
+
         h1 {
             color: var(--text-color-title);
             font-family: $font-family-title;

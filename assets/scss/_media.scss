@@ -1,19 +1,27 @@
 // media queries
 
-@media only screen and (max-width: $screen-mobile) {
-    section#author {
-        align-items: center;
-        flex-direction: column;
-        span {
-            display: block;
-            padding-bottom: 0.5vmax;
+@media only screen and (max-width: $screen-laptop) {
+    main {
+        article {
+            p,
+            ul,
+            h3,
+            h4,
+            section,
+            blockquote {
+                width: min(60vmax, 100%); // increase the column width a bit
+            }
+            h2 {
+                margin: 2vmax 5vmin 1vmax;
+            }
+            h3 {
+                margin: 2vmax 0 1vmax;
+            }
         }
     }
     #toc {
-        display: none;
-    }
-    .hidden-mobile {
-        display: none;
+        right: -50vw;
+        width: 50vw;
     }
 }
 
@@ -72,10 +80,26 @@
     }
 }
 
-@media only screen and (max-width: $screen-laptop) {
+@media only screen and (max-width: $screen-mobile) {
+    section#author {
+        align-items: center;
+        flex-direction: column;
+        span {
+            display: block;
+            padding-bottom: 0.5vmax;
+        }
+    }
     #toc {
-        right: -50vw;
-        width: 50vw;
+        display: none;
+    }
+    .hidden-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: $screen-narrow) {
+    main aside img#banner {
+        display: block;
     }
 }
 
