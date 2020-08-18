@@ -1,9 +1,26 @@
 {{ define "main" }}
-  <h1>Posts</h1>
-  {{ range .Pages }}
-    <article>
-      <h2>{{ .Title }}</h2>
-      {{ .Content }}
-    </article>
-  {{ end }}
+<main id="list">
+    <h1>
+        {{ cond (ne .Type "page") .Type "Posts" }}
+    </h1>
+
+    {{ range .Pages }}
+    <section>
+        <h2>
+            <a href="{{ .RelPermalink }}" class="wa link">
+                <span>{{ .Title }}</span>
+                <b class="arrow"></b>
+            </a>
+        </h2>
+        <h3>
+            Written by {{ .Params.author }} on {{ .PublishDate.Format "January 1, 2006" }}
+            &nbsp;&middot;&nbsp;
+            {{ .ReadingTime }} minute read
+        </h3>
+        <p>
+            {{ .Summary }}
+        </p>
+    </section>
+    {{ end }}
+</main>
 {{ end }}

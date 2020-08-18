@@ -5,8 +5,13 @@
         <span class="name">/tags</span><!--
         --><span class="slug">/{{ .Data.Term }}</span>
         {{ else }}
-        <span class="name">{{ .Site.Params.Subtitle }}</span><!--
+        <span class="name">/{{ cond (ne .Type "page") .Type .Params.base }}</span><!--
         --><span class="slug">{{ with .Params.slug }}/{{ . }}{{ end }}</span>
         {{ end }}
     </h1>
+    <nav>
+        <a href="/posts" class="arrow">Posts</a>
+        <a href="/thoughts" class="arrow">Thoughts</a>
+        <a href="/about" class="arrow">About</a>
+    </nav>
 </header>

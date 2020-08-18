@@ -1,4 +1,5 @@
 enableEmoji: true
+enableGitInfo: true
 footnoteReturnLinkContents: "↑" # doesn't work with goldmark yet
 languageCode: en-us
 log: true
@@ -30,6 +31,6 @@ params:
   title: Andrew Gioia | Blog
   AuthorName: Andrew Gioia
   GitHubUser: andrewgioia
-  Subtitle: /posts
+  Subtitle: blog
 title: Andrew Gioia
 verboseLog: true

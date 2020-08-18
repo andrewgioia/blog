@@ -2,7 +2,7 @@
 title: Boycott Facebook, but not because it supports free speech
 linkTitle: Boycott Facebook, but not for its free speech
 author: Andrew Gioia
-slug: "facebook"
+slug: facebook
 date: 2020-07-09
 publishdate: 2020-07-14
 banner: post-cover.png

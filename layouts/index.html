@@ -4,7 +4,7 @@
         {{.Content}}
     </div>
     <ul class="list">
-    {{ range .Site.RegularPages }}
+    {{ range where .Site.RegularPages "Section" "posts" }}
         <li>
             <div>
                 <a href="{{ .Permalink }}" class="wa link">

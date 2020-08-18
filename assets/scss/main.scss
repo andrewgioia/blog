@@ -16,6 +16,7 @@
     --text-color:           #{$navy-md};
     --text-color-accent:    #{$navy-dk};
     --text-color-subdued:   #{$tan-md};
+    --text-color-take:      #{$sky-md};
     --text-color-title:     #{$purple-md};
     --text-color-h3:        #{$teal-md};
     --screen-mobile:        #{$screen-mobile};
@@ -46,6 +47,8 @@ body {
 header {
     align-self: stretch;
     border-top: 1vmax solid var(--border-subdued);
+    display: flex;
+    justify-content: space-between;
     padding: 5vmin 6vmin 0;
 
     h1 {
@@ -64,6 +67,19 @@ header {
             }
         }
     }
+
+    nav {
+        a {
+            color: var(--text-color);
+            display: inline-block;
+            font-size: max(1.5vmax, 1rem);
+            font-weight: 700;
+            margin-top: 0.25rem;
+            &:not(:first-child) {
+                margin-left: max(2.5vmax, 1rem);
+            }
+        }
+    }
 }
 
 main {
@@ -72,16 +88,207 @@ main {
     padding: max(5vmin, 2rem) 6vmin;
     position: relative;
 
+    // content titles
+    aside {
+        margin: 0 7.5vmin max(2vmax, 1rem);
+        text-align: center;
+
+        img#banner {
+            display: none; // only showing this on phones
+            margin: 0 -6vmin 10vmin;
+            width: calc(100% + 12vmin);
+        }
+
+        h1 {
+            color: var(--text-color-title);
+            font-family: $font-family-title;
+            font-size: max(3.75vmax, 2rem);
+            font-weight: 800;
+            letter-spacing: -0.075rem;
+            line-height: 1.15;
+        }
+
+        time {
+            font-size: max(1.5vmax, 1rem);
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        &.paginate { // full width for the arrows
+            display: flex;
+            flex-direction: row;
+            margin: 0 0 max(2vmax, 1rem);
+
+            #next,
+            #previous {
+                flex-grow: 0;
+                padding-top: 2vmax;
+                width: 7.5vmax;
+
+                svg {
+                    border-radius: 100rem;
+                }
+
+                &:hover svg {
+                    background-color: var(--text-color-subdued);
+                    stroke: var(--text-color);
+                }
+            }
+            #next {
+                text-align: right;
+
+                svg {
+                    padding: 0.2vmax 0 .2vmax 0.4vmax;
+                }
+            }
+            #previous {
+                text-align: left;
+
+                svg {
+                    padding: 0.2vmax 0.4vmax .2vmax 0;
+                }
+            }
+
+            #meta {
+                flex-grow: 1;
+            }
+        }
+    }
+
+    // content body
+    article {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        h2 { // section titles, outset width
+            color: var(--text-color-accent);
+            font-size: max(2.25vmax, 1.5rem);
+            font-weight: 800;
+            letter-spacing: -0.05rem;
+            margin: 2vmax 10vmin 1vmax;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h3 { // subsection headers, body width
+            color: var(--text-color-h3);
+            font-size: max(2vmax, 1.375rem);
+            margin: 2vmax 10vmin 1vmax;
+            text-align: center;
+        }
+
+        h4 { // highlighted sections, left aligned and bigger
+            font-size: max(1.75vmax, 1.25rem);
+            font-weight: 500;
+            font-weight: 800;
+            line-height: max(2.5vmax, 1.75rem);
+            margin: max(1vmax, 0.75rem) 0;
+            width: min(50vmax, 100%)
+        }
+
+        // skinny elements
+        p,
+        ul,
+        h3,
+        section,
+        blockquote {
+            width: min(50vmax, 100%);
+        }
+
+        // lists
+        ul,
+        ol {
+            margin: max(1vmax, 0.75rem) 0;
+            padding: 0;
+
+            li {
+                margin-left: max(3vmax, 1rem);
+                padding: 0 0 max(2vmax, 1rem) max(1vmax, 0.5rem);
+
+                p:first-child { // each li's first p needs reduced top margin
+                    margin-top: max(0.5vmax, 0.5rem)
+                }
+                &:first-child p:first-child { // the first item's first p gets none
+                    margin-top: 0;
+                }
+                p:last-child { // every last para needs it's bottom margin removed too
+                    margin-bottom: 0;
+                }
+            }
+        }
+        ul {
+            // default font-size on lists should be same as paragraphs
+            li {
+                font-size: max(1.375vmax, 1rem);
+                line-height: max(2vmax, 1.5rem);
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+        }
+        section {
+            // for lists inside <sections>, like FNs, we'll make it a little smaller
+            ol li,
+            ol li p {
+                font-size: max(1.125vmax, 0.85rem);
+                line-height: max(1.5vmax, 1.375rem);
+            }
+        }
+
+        // post images
+        figure {
+            margin: 2vmax 0;
+            max-width: 80vw;
+            picture,
+            img {
+                border-radius: 1rem;
+                width: 100%;
+            }
+        }
+
+        // captions below post images
+        figcaption {
+            font-size: max(1.25vmax, 0.9rem);
+            font-style: italic;
+            padding: 1vmax 0;
+            text-align: center;
+        }
+    }
+
     // home page
     &#home {
         padding-top: max(10vmin, 2rem);
         width: 80%;
     }
 
-    // article page
+    // full post pages
     &#post {
         align-items: center;
         flex-direction: column;
+    }
+
+    // short takes pages
+    &#thought {
+        align-items: center;
+        flex-direction: column;
+        max-width: var(--screen-full);
+
+        h1 {
+            color: var(--text-color-take);
+            font-size: max(2.5vmax, 2rem); // slightly smaller
+        }
+
+        article {
+            align-items: center;
+            //background-color: var(--background-accent);
+            border-radius: max(2vmax, 1rem);
+            display: flex;
+            flex-direction: column;
+            //padding: 2vmax 4vmax;
+            width: min(50vmax, 100%);
+        }
     }
 
     // list pages
@@ -129,173 +336,45 @@ main {
             }
         }
     }
+}
 
-    // post titles
-    aside {
-        margin: 0 7.5vmin max(2vmax, 1rem);
-        text-align: center;
+// paragraphs
+p {
+    font-size: max(1.375vmax, 1rem);
+    line-height: max(2vmax, 1.5rem);
+    margin: max(1vmax, 0.75rem) 0;
 
-        img#banner {
-            display: none; // only showing this on phones
-            margin: 0 -6vmin 10vmin;
-            width: calc(100% + 12vmin);
-        }
+    &.big { // larger highlight and intro paragraphs
+        font-size: max(1.75vmax, 1.25rem);
+        font-weight: 500;
+        line-height: max(2.5vmax, 1.75rem);
 
-        h1 {
-            color: var(--text-color-title);
-            font-family: $font-family-title;
-            font-size: max(3.75vmax, 2rem);
+        > strong {
             font-weight: 800;
-            letter-spacing: -0.075rem;
-            line-height: 1.1;
-        }
-
-        time {
-            font-size: max(1.5vmax, 1rem);
-            font-weight: 900;
-            text-transform: uppercase;
         }
     }
+    &.swqm { // starts with a quotation mark
+        text-indent: min(-0.55vmax, -0.4rem);
+    }
+}
 
-    // post content
-    article {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+// blockquotes
+blockquote {
+    margin: max(1vmax, 0.75rem) 0;
 
-        h2 { // section titles, outset width
-            color: var(--text-color-accent);
-            font-size: max(2.25vmax, 1.5rem);
-            font-weight: 800;
-            letter-spacing: -0.05rem;
-            margin: 2vmax 10vmin 1vmax;
-            text-align: center;
-            text-transform: uppercase;
+    p {
+        border-left: 1vmax solid var(--border-accent);
+        padding-left: 2vmax;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: max(1vmax, 0.75rem) 0 max(1vmax, 0.75rem) 2vmax;
+        width: auto !important;
+
+        &:first-child {
+            padding-top: 0;
         }
-
-        h3 { // subsection headers, body width
-            color: var(--text-color-h3);
-            font-size: max(2vmax, 1.375rem);
-            margin: 2vmax 10vmin 1vmax;
-            text-align: center;
-        }
-
-        h4 { // highlighted sections, left aligned and bigger
-            font-size: max(1.75vmax, 1.25rem);
-            font-weight: 500;
-            font-weight: 800;
-            line-height: max(2.5vmax, 1.75rem);
-            margin: max(1vmax, 0.75rem) 0;
-            width: min(50vmax, 100%)
-        }
-
-        // skinny elements
-        p,
-        ul,
-        h3,
-        section,
-        blockquote {
-            width: min(50vmax, 100%);
-        }
-
-        // paragraphs
-        p {
-            font-size: max(1.375vmax, 1rem);
-            line-height: max(2vmax, 1.5rem);
-            margin: max(1vmax, 0.75rem) 0;
-
-            &.big { // larger highlight and intro paragraphs
-                font-size: max(1.75vmax, 1.25rem);
-                font-weight: 500;
-                line-height: max(2.5vmax, 1.75rem);
-
-                > strong {
-                    font-weight: 800;
-                }
-            }
-            &.swqm { // starts with a quotation mark
-                text-indent: min(-0.55vmax, -0.4rem);
-            }
-        }
-
-        // lists
-        ul,
-        ol {
-            margin: max(1vmax, 0.75rem) 0;
-            padding: 0;
-
-            li {
-                margin-left: max(3vmax, 1rem);
-                padding: 0 0 max(2vmax, 1rem) max(1vmax, 0.5rem);
-
-                p:first-child { // each li's first p needs reduced top margin
-                    margin-top: max(0.5vmax, 0.5rem)
-                }
-                &:first-child p:first-child { // the first item's first p gets none
-                    margin-top: 0;
-                }
-                p:last-child { // every last para needs it's bottom margin removed too
-                    margin-bottom: 0;
-                }
-            }
-        }
-        ul {
-            // default font-size on lists should be same as paragraphs
-            li {
-                font-size: max(1.375vmax, 1rem);
-                line-height: max(2vmax, 1.5rem);
-
-                &:last-child {
-                    padding-bottom: 0;
-                }
-            }
-        }
-        section {
-            // for lists inside <sections>, like FNs, we'll make it a little smaller
-            ol li,
-            ol li p {
-                font-size: max(1.125vmax, 0.85rem);
-                line-height: max(1.5vmax, 1.375rem);
-            }
-        }
-
-        // blockquotes
-        blockquote {
-            margin: max(1vmax, 0.75rem) 0;
-
-            p {
-                border-left: 1vmax solid var(--border-accent);
-                padding-left: 2vmax;
-                margin-top: 0;
-                margin-bottom: 0;
-                padding: max(1vmax, 0.75rem) 0 max(1vmax, 0.75rem) 2vmax;
-                width: auto;
-
-                &:first-child {
-                    padding-top: 0;
-                }
-                &:last-child {
-                    padding-bottom: 0;
-                }
-            }
-        }
-
-        // post images
-        figure {
-            margin: 1vmax 0;
-            max-width: 80vw;
-            picture,
-            img {
-                width: 100%;
-            }
-        }
-
-        // captions below post images
-        figcaption {
-            font-size: max(1.25vmax, 0.9rem);
-            font-style: italic;
-            padding: 1vmax 0 2vmax;
-            text-align: center;
+        &:last-child {
+            padding-bottom: 0;
         }
     }
 }
@@ -304,48 +383,47 @@ main {
 footer {
     display: flex;
     flex-direction: column;
-    padding: max(5vmin, 2rem) 6vmin;
+    margin: max(5vmin, 2rem) 6vmin;
     position: relative;
     max-width: calc(100% - 12vmin);
     width: 100%;
 
+    &.border {
+        border-top: max(0.25vmax, 0.25rem) solid var(--border-accent);
+
+        &::before {
+            align-items: center;
+            background: var(--background);
+            border-radius: 100%;
+            color: var(--border-accent);
+            content: $icon-barracuda;
+            display: flex;
+            font-family: 'andrew';
+            font-size: max(3vmax, 2.5rem);
+            height: max(5vmax, 4rem);
+            justify-content: center;
+            left: 50%;
+            margin-left: min(-2.5vmax, -2rem);
+            position: absolute;
+            text-align: center;
+            top: min(-2.5vmax, -2rem);
+            width: max(5vmax, 4rem);
+        }
+    }
+
     // bottom content, should be footer
     section {
-        &#author {
-            align-self: stretch;
-            display: flex;
-            justify-content: center;
-            margin-top: 5vmax;
-            position: relative;
+        align-self: stretch;
+        display: flex;
+        justify-content: center;
+        margin-top: 5vmax;
+        position: relative;
 
-            span {
-                margin-left: 0.5vmax;
-            }
-
-            &.border {
-                border-top: max(0.25vmax, 0.25rem) solid var(--border-accent);
-                padding-top: 5vmax;
-
-                &::before {
-                    align-items: center;
-                    background: var(--background);
-                    border-radius: 100%;
-                    color: var(--border-accent);
-                    content: $icon-barracuda;
-                    display: flex;
-                    font-family: 'andrew';
-                    font-size: max(3vmax, 2.5rem);
-                    height: max(5vmax, 4rem);
-                    justify-content: center;
-                    left: 50%;
-                    margin-left: min(-2.5vmax, -2rem);
-                    position: absolute;
-                    text-align: center;
-                    top: min(-2.5vmax, -2rem);
-                    width: max(5vmax, 4rem);
-                }
-            }
+        span {
+            margin-left: 0.5vmax;
         }
+
+
     }
 }
 
@@ -374,22 +452,22 @@ a[href^="#fn:"]:after{ content: ']' }
     width: 35vw;
 
     &::before {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23032140' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%0A%3E%3Cline x1='8' y1='6' x2='21' y2='6' /%3E%3Cline x1='8' y1='12' x2='21' y2='12' /%3E%3Cline x1='8' y1='18' x2='21' y2='18' /%3E%3Cline x1='3' y1='6' x2='3.01' y2='6' /%3E%3Cline x1='3' y1='12' x2='3.01' y2='12' /%3E%3Cline x1='3' y1='18' x2='3.01' y2='18' /%3E%3C/svg%3E%0A");
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23bbb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%0A%3E%3Cline x1='8' y1='6' x2='21' y2='6' /%3E%3Cline x1='8' y1='12' x2='21' y2='12' /%3E%3Cline x1='8' y1='18' x2='21' y2='18' /%3E%3Cline x1='3' y1='6' x2='3.01' y2='6' /%3E%3Cline x1='3' y1='12' x2='3.01' y2='12' /%3E%3Cline x1='3' y1='18' x2='3.01' y2='18' /%3E%3C/svg%3E%0A");
         background-size: 75% 75%;
         background-position: 0 50%;
         background-repeat: no-repeat;
+        bottom: max(5vmin, 2rem);
         content: '';
         cursor: pointer;
         display: block;
-        height: 5vmax;
-        left: -7.5vmax;
+        height: 4vmax;
+        left: -12vmin;
         position: absolute;
-        top: 2.5vmax;
         transition-property: opacity, left;
         transition-duration: 400ms;
         transition-timing-function: ease-in-out;
         transition-delay: 250ms;
-        width: 7.5vmax;
+        width: 12vmin;
     }
 
     &:hover,
@@ -475,7 +553,7 @@ b {
     &#top {
         display: block;
         align-self: flex-end;
-        margin: 3vmax;
+        margin: 5vmin 10vmin 3vmin 0;
 
         &:hover {
             border: none;
@@ -483,14 +561,12 @@ b {
     }
 }
 
-// paragraph links
+// specific link effects
 p a:hover {
     border-bottom: 2px solid var(--link-color);
 }
-
-// specific link effects
-header h1 a.back::after {
-    -webkit-transform: translateY(-0.5rem) translateX(min(-1.75vmax, -1.25rem));
+header h1 a.arrow.back::after {
+    -webkit-transform: translateY(-0.5rem) translateX(min(-2vmax, -1.25rem));
     -moz-transform: translateY(-0.5rem) translateX(min(-1.75vmax, -1.25rem));
     transform: translateY(-0.5rem) translateX(min(-1.75vmax, -1.25rem));
 }
@@ -553,6 +629,26 @@ ul {
                 color: #fff;
             }
         }
+    }
+    &.clean {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        list-style-type: none;
+        margin: 1vmax 0 0;
+        padding: 0;
+
+        li a {
+            color: var(--text-color);
+            font-size: max(1.25vmax, 1rem);
+            margin: 0 0.5vmax;
+
+            &:hover {
+                color: var(--text-color-accent);
+            }
+        }
+
     }
 }
 

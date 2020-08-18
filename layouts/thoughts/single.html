@@ -1,0 +1,75 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
+<main id="thought" aria-role="main">
+
+    {{ with .Paginator }}
+    <aside class="paginate">
+
+        {{ if .HasPrev }}
+        <a href="{{ .Prev }}" id="previous">
+            <svg xmlns="http://www.w3.org/2000/svg" width="max(5vmax, 4rem)" height="max(5vmax, 4rem)" viewBox="0 0 24 24" fill="none" stroke="var(--text-color-subdued)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+        </a>
+        {{ end }}
+
+        <div id="meta">
+            <h1>
+                {{ .Title }}
+            </h1>
+            <time>
+                {{ .PublishDate.Format "January 2, 2006" }} &nbsp;
+            </time>
+            {{ with (.Params.tags) }}
+            <ul id="tags" class="clean">
+                {{ range . }}
+                    <li>
+                        <a href="{{ "tags/" | absURL }}{{ . | urlize }}">#{{ . }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+
+        {{ if .HasNext }}
+        <a href="#" id="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="max(5vmax, 4rem)" height="max(5vmax, 4rem)" viewBox="0 0 24 24" fill="none" stroke="var(--text-color-subdued)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6" />
+            </svg>
+        </a>
+        {{ end }}
+
+    </aside>
+
+    {{ else }}
+    <aside>
+        <div id="meta">
+            <h1>
+                {{ .Title }}
+            </h1>
+            <time>
+                {{ .PublishDate.Format "January 2, 2006" }} &nbsp;
+            </time>
+            {{ with (.Params.tags) }}
+            <ul id="tags" class="clean">
+                {{ range . }}
+                    <li>
+                        <a href="{{ "tags/" | absURL }}{{ . | urlize }}">#{{ . }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+    </aside>
+    {{ end }}
+
+    <article>
+        {{ .Content }}
+    </article>
+</main>
+
+{{ end }}

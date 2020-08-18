@@ -26,6 +26,11 @@
 }
 
 @media only screen and (max-width: $screen-tablet) {
+    header {
+        nav {
+            display: none;
+        }
+    }
     main {
         align-self: stretch;
         overflow-x: hidden; // safety for negative figure margin below

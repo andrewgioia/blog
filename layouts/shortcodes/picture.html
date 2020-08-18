@@ -1,0 +1,18 @@
+<figure>
+    <picture>
+        {{ with .Get "dark" }}
+        <source
+            srcset="{{ . }}"
+            media="(prefers-color-scheme: dark)">
+        {{ end }}
+        <img src='{{ .Get "source" }}'
+            alt='{{ with .Get "alt" }}{{ . }}{{ end }}'
+            title='{{ with .Get "title" }}{{ . }}{{ end }}'
+            class="outset">
+    </picture>
+    {{ with .Get "caption" }}
+    <figcaption>
+        {{ . }}
+    </figcaption>
+    {{ end }}
+</figure>

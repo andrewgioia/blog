@@ -2,7 +2,7 @@
 title: Mozilla's failures and a path to profitability
 linkTitle: Mozilla's failures and a path to profitability
 author: Andrew Gioia
-slug: "mozilla"
+slug: mozilla
 date: 2020-08-14
 publishdate: 2020-08-14
 banner: post-cover.png
@@ -53,20 +53,12 @@ I was _excited_ to switch away from Firefox in 2009 when Google Chrome became a 
 
 * **Incognito Mode was very useful.** Safari had apparently had this for years but I wasn't on a Mac then and Safari wasn't popular for a lot of other reasons on Windows. While very basic, Incognito windows were my first foray into Internet privacy and became an easy way to load a fresh copy of a website. 
 
-<figure>
-    <picture>
-      <source 
-        srcset="firefox-chrome-2009@dark.png" 
-        media="(prefers-color-scheme: dark)">
-      <img src="firefox-chrome-2009@light.png" 
-           alt="Firefox and Chrome in 2009" 
-           title="Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008."
-           class="outset">
-    </picture>
-    <figcaption>
-        Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008.
-    </figcaption>
-</figure>
+{{< picture 
+    source="firefox-chrome-2009@light.png"
+    dark="firefox-chrome-2009@dark.png" 
+    alt="Firefox and Chrome in 2009" 
+    title="Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008."
+    caption="Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008." >}}
 
 Firefox was without question the best browser through the early 2000s and it pushed the web forward in countless ways, often in stark contrast to Microsoft. [Firefox 3 earlier in the year was incredible](https://www.cnet.com/reviews/firefox-3-review/) and set single day download records, but the browser experience was slow and updates felt incremental and not "revolutionary." 
 
