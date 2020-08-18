@@ -413,17 +413,24 @@ footer {
 
     // bottom content, should be footer
     section {
+        align-items: center;
         align-self: stretch;
         display: flex;
         justify-content: center;
         margin-top: 5vmax;
         position: relative;
 
+        &:not(:first-child) {
+            margin-top: 1vmax;
+        }
+
         span {
             margin-left: 0.5vmax;
         }
 
-
+        &.pb {
+            padding-bottom: 2vmax;
+        }
     }
 }
 

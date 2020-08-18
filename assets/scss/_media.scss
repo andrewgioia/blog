@@ -94,6 +94,9 @@
             padding-bottom: 0.5vmax;
         }
     }
+    footer section {
+        flex-direction: column;
+    }
     #toc {
         display: none;
     }
