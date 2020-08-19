@@ -1,5 +1,15 @@
 // media queries
 
+@media only screen and (max-width: $screen-display) {
+    // this is the max-width on content, after this we start using 80% of the width for many things
+    main#home ul.thoughts {
+        transform: translateX(-10%);
+        li:first-child {
+            margin-left: 10%;
+        }
+    }
+}
+
 @media only screen and (max-width: $screen-laptop) {
     main {
         article {
@@ -62,21 +72,24 @@
                 }
             }
         }
-
-        &#list {
-            // move the numbers to the top
-            section {
-                list-style-position: inside;
-                h2 {
-                    margin-top: 1vmax;
+        &#home {
+            ul.posts li {
+                flex-direction: column;
+                time {
+                    padding: 1vmax 0 0 0;
                 }
             }
-        }
-    }
-    ul.list li {
-        flex-direction: column;
-        time {
-            padding: 1vmax 0 0 0;
+            ul.thoughts {
+                transform: translateX(-6vmin);
+                li {
+                    &:first-child {
+                        margin-left: 6vmin;
+                    }
+                    a {
+                        width: 33vmax;
+                    }
+                }
+            }
         }
     }
     #toc {
@@ -92,6 +105,19 @@
         span {
             display: block;
             padding-bottom: 0.5vmax;
+        }
+    }
+    main#list section {
+        time {
+            color: var(--border-accent);
+            opacity: 1;
+            right: 1.5rem;
+            top: 0.85rem;
+        }
+        h2 {
+            border-top: 0.75vmax solid var(--border-accent);
+            margin-top: 1.5rem;
+            padding-top: 1.375rem;
         }
     }
     footer section {

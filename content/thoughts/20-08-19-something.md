@@ -1,10 +1,10 @@
 ---
-title: Toddlers naturally love to help, and we need to encourage it endlessly
+title: This is a short title
 author: Andrew Gioia
-slug: encouragement
-date: 2020-08-16
-publishdate: 2020-08-16
-description: Something 
+slug: something
+date: 2020-08-20
+publishdate: 2020-08-20
+description: Something
 tags:
     - Parenting
     - Toddlers

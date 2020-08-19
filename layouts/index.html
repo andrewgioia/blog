@@ -3,7 +3,7 @@
     <div class="intro">
         {{.Content}}
     </div>
-    <ul class="list">
+    <ul class="posts">
     {{ range where .Site.RegularPages "Section" "posts" }}
         <li>
             <div>
@@ -15,6 +15,22 @@
             <time>
                 {{ .PublishDate.Format "January 2006" }}
             </time>
+        </li>
+    {{ end }}
+    </ul>
+    <ul class="thoughts">
+    {{ range where .Site.RegularPages "Section" "thoughts" }}
+        <li>
+            <a href="{{ .Permalink }}" class="wa link">
+                <span>
+                    {{ .LinkTitle }}
+                </span>
+                <time>
+                    {{ .PublishDate.Format "January 2, 2006" }}
+                </time>
+                <b class="arrow"></b>
+            </a>
+
         </li>
     {{ end }}
     </ul>

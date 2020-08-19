@@ -6,6 +6,9 @@
 
     {{ range .Pages }}
     <section>
+        <time>
+            {{ .PublishDate.Format "2006 Jan 2" }}
+        </time>
         <h2>
             <a href="{{ .RelPermalink }}" class="wa link">
                 <span>{{ .Title }}</span>
@@ -13,7 +16,7 @@
             </a>
         </h2>
         <h3>
-            Written by {{ .Params.author }} on {{ .PublishDate.Format "January 1, 2006" }}
+            Written by {{ .Params.author }} on {{ .PublishDate.Format "January 2, 2006" }}
             &nbsp;&middot;&nbsp;
             {{ .ReadingTime }} minute read
         </h3>

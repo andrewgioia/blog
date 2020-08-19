@@ -12,7 +12,6 @@
     "sass": "sass --no-source-map assets/scss/main.scss public/css/style.css",
     "watch": "sass --no-source-map --watch assets/scss/main.scss public/css/style.css",
     "tidy": "tidy -config tidy.conf -mq public/**/*.html",
-    "tidy-bash": "find . -name '*.html' -type f -print -exec tidy -config ../tidy.conf -mq '{}' \\;",
     "copy": "cp -R public/* /var/www/blog.andrewgioia.com/",
     "editing": "hugo --environment development --watch=true",
     "publish": "hugo && sass --no-source-map assets/scss/main.scss public/css/style.css && cp -R public/* /var/www/blog.andrewgioia.com/"

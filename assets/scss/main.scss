@@ -84,6 +84,7 @@ header {
 
 main {
     display: flex;
+    flex-direction: column;
     max-width: var(--screen-display);
     padding: max(5vmin, 2rem) 6vmin;
     position: relative;
@@ -259,20 +260,109 @@ main {
 
     // home page
     &#home {
+        overflow-x: hidden; // safety for thoughts side scroller
         padding-top: max(10vmin, 2rem);
         width: 80%;
+
+        // main page post list
+        ul.posts {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            li {
+                align-items: stretch;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-bottom: max(2.5vmax, 1.1rem);
+
+                div {
+                    flex: 0 1 auto; // don't grow, shrink if needed, auto size onload
+                    font-size: max(2.5vmax, 1.1rem);
+                    font-weight: 600;
+                }
+
+                time {
+                    flex: 0 0 auto; // don't grow, don't shrink. auto size onload
+                    font-size: max(2vmax, 1rem);
+                    font-weight: 900;
+                    padding-top: 0.5vmax;
+                    padding-left: 1vmax;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        // main page thoughts scroller
+        ul.thoughts {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding: 0.5vmax 0;
+            margin: 2.5vmax 0;
+            overflow-x: auto;
+            transform: translateX(calc(-1 * ((100vw - var(--screen-display)) / 2)));
+            white-space: nowrap;
+            width: 100vw;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            li {
+                display: flex;
+                margin-right: max(2vmax, 1rem);
+
+                &:first-child { // push the first one right 1/2 the max column size by default
+                    margin-left: calc((100vw - var(--screen-display)) / 2);
+                }
+
+                a {
+                    background: var(--background-accent);
+                    border-radius: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: max(1.5vmax, 1rem);
+                    justify-content: space-between;
+                    padding: max(2vmax, 1rem);
+                    top: 0;
+                    transition: 150ms top ease-in-out;
+                    white-space: normal;
+                    width: 20vmax;
+
+                    span {
+                        flex-grow: 1;
+                    }
+
+                    time {
+                        color: var(--text-color);
+                        font-size: max( 1.25vmax, 1rem);
+                        font-weight: 800;
+                        margin-top: max(1.75vmax, 1rem);
+                        text-transform: uppercase;
+                    }
+
+                    &:hover {
+                        top: -0.5vmax;
+                    }
+                }
+            }
+        }
     }
 
     // full post pages
     &#post {
         align-items: center;
-        flex-direction: column;
     }
 
     // short takes pages
     &#thought {
         align-items: center;
-        flex-direction: column;
         max-width: var(--screen-full);
 
         h1 {
@@ -282,11 +372,9 @@ main {
 
         article {
             align-items: center;
-            //background-color: var(--background-accent);
             border-radius: max(2vmax, 1rem);
             display: flex;
             flex-direction: column;
-            //padding: 2vmax 4vmax;
             width: min(50vmax, 100%);
         }
     }
@@ -294,30 +382,50 @@ main {
     // list pages
     &#list {
         align-items: center;
-        flex-direction: column;
         width: 80%;
 
         h1 {
             align-self: center;
-            font-size: max(3vmax, 2rem);
-            margin: 1vmax 0 3vmax;
+            font-size: max(3.75vmax, 2rem);
+            font-weight: 800;
+            letter-spacing: -0.075rem;
+            line-height: 1.15;
+            margin: 2vmax 0 5vmax;
+            text-transform: capitalize;
         }
-        section {
-            display: list-item;
-            list-style: decimal-leading-zero;
-            margin-bottom: max(2vmax, 1.5rem);
 
-            &::marker {
+        section {
+            background: var(--background-accent);
+            border-radius: max(1.5vmax, 0.5rem);
+            border-left: max(1.5vmax, 0.5rem) solid var(--text-color-title);
+            margin-bottom: max(4vmax, 1.5rem);
+            padding: max(1.5vmax, 1rem) max(3vmax, 1.5rem);
+            position: relative;
+
+            time {
+                align-items: flex-end;
+                display: flex;
+                flex-direction: column;
+                font-size: max(3.75vmax, 1.75rem);
                 font-weight: 800;
-                font-size: max(2vmax, 1.5rem);
+                letter-spacing: -0.075rem;
+                line-height: 1.15;
+                height: 5vmax;
+                justify-content: center;
+                opacity: 0.1;
+                position: absolute;
+                right: 1vmax;
+                top: 0;
+                width: 25vmax;
             }
 
             h2 {
                 font-family: $font-family-title;
-                font-size: max(2vmax, 1.5rem);
+                font-size: max(2vmax, 1.75rem);
                 font-weight: 800;
                 letter-spacing: -0.05rem;
                 line-height: 1.1;
+                margin-top: max(1vmax, 0.75rem);
             }
 
             h3 {
@@ -327,12 +435,6 @@ main {
             p {
                 font-size: max(1.375vmax, 1rem);
                 line-height: max(2vmax, 1.5rem);
-            }
-
-            // after the first one, put a top border to divide them
-            + section {
-                border-top: 0.5vmax solid var(--border-subdued);
-                padding-top: max(2vmax, 1.5rem);
             }
         }
     }
@@ -578,46 +680,16 @@ header h1 a.arrow.back::after {
     transform: translateY(-0.5rem) translateX(min(-1.75vmax, -1.25rem));
 }
 
-// non-post lists
+// non-content lists
 ul {
-    &.list { // main page post list
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-
-        li {
-            align-items: stretch;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding-bottom: max(2.5vmax, 1.1rem);
-
-            div {
-                flex: 0 1 auto; // don't grow, shrink if needed, auto size onload
-                font-size: max(2.5vmax, 1.1rem);
-                font-weight: 600;
-            }
-
-            time {
-                flex: 0 0 auto; // don't grow, don't shrink. auto size onload
-                font-size: max(2vmax, 1rem);
-                font-weight: 900;
-                padding-top: 0.5vmax;
-                padding-left: 1vmax;
-                text-transform: uppercase;
-            }
-        }
-    }
+    // post and thought tags
     &.tags {
         align-items: center;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        list-style-type: none;
+        list-style: none;
         margin: 4vmax 0 0;
         padding: 0;
         width: 100%;
@@ -637,6 +709,7 @@ ul {
             }
         }
     }
+    // tags that are just text
     &.clean {
         display: inline-flex;
         flex-direction: row;
