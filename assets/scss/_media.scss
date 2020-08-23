@@ -11,6 +11,7 @@
 }
 
 @media only screen and (max-width: $screen-laptop) {
+    // increase the column and main content widths a bit
     main {
         article {
             p,
@@ -19,7 +20,7 @@
             h4,
             section,
             blockquote {
-                width: min(60vmax, 100%); // increase the column width a bit
+                width: min(60vmax, 100%);
             }
             h2 {
                 margin: 2vmax 5vmin 1vmax;
@@ -29,6 +30,7 @@
             }
         }
     }
+    // make the toc wider
     #toc {
         right: -50vw;
         width: 50vw;
@@ -36,11 +38,13 @@
 }
 
 @media only screen and (max-width: $screen-tablet) {
+    // hiding the nav until we can make it responsive
     header {
         nav {
             display: none;
         }
     }
+    // all content is now full width
     main {
         align-self: stretch;
         overflow-x: hidden; // safety for negative figure margin below
@@ -59,26 +63,35 @@
             width: 100%;
         }
         article {
+            // full width lists
             ul {
                 align-self: start;
                 padding: 0;
                 width: 100%;
             }
+            // move images outward
             figure {
-                margin: 2vmax -6vmin 1vmax; // move images outward
+                margin: 2vmax -6vmin 1vmax;
                 max-width: 100vw;
                 figcaption {
                     margin: 0 12vmin;
                 }
+                // remove radius on images
+                picture,
+                img {
+                    border-radius: 0;
+                }
             }
         }
         &#home {
+            // home page posts are vertical now
             ul.posts li {
                 flex-direction: column;
                 time {
                     padding: 1vmax 0 0 0;
                 }
             }
+            // fixing the thoughts side scroller
             ul.thoughts {
                 transform: translateX(-6vmin);
                 li {
@@ -92,6 +105,7 @@
             }
         }
     }
+    // make the toc even wider
     #toc {
         right: -67vw;
         width: 67vw;
@@ -99,6 +113,7 @@
 }
 
 @media only screen and (max-width: $screen-mobile) {
+    // stack the author block vertically now
     section#author {
         align-items: center;
         flex-direction: column;
@@ -107,6 +122,7 @@
             padding-bottom: 0.5vmax;
         }
     }
+    // add some padding on list page elements
     main#list section {
         time {
             color: var(--border-accent);
@@ -120,30 +136,36 @@
             padding-top: 1.375rem;
         }
     }
+    // stack footer content vertically
     footer section {
         flex-direction: column;
     }
+    // just hide the toc here
     #toc {
         display: none;
     }
+    // other things hard-coded to be hidden on mobile
     .hidden-mobile {
         display: none;
     }
 }
 
 @media only screen and (max-width: $screen-narrow) {
+    // show the banner on phones only
     main aside img#banner {
         display: block;
     }
 }
 
 @media only screen and (min-width: $screen-tablet) {
+    // hide anything that should just be visible on mobile
     .show-mobile {
         display: none;
     }
 }
 
 @media only screen and (min-width: $screen-display) {
+    // padding improvements on big screens
     main article h2 {
         margin: 2vmax 7vmin 1vmax;
     }
@@ -153,6 +175,7 @@
 }
 
 @media only screen and (min-width: $screen-full) {
+    // padding improvements on really big screens
     main article h2 {
         margin: 2vmax 5vmin 1vmax;
     }

@@ -8,6 +8,9 @@
 
         {{ range .Data.Pages }}
         <section>
+            <time>
+                {{ .PublishDate.Format "2006 Jan 2" }}
+            </time>
             <h2>
                 <a href="{{ .RelPermalink }}" class="wa link">
                     <span>{{ .Title }}</span>

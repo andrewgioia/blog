@@ -351,6 +351,15 @@ main {
                         top: -0.5vmax;
                     }
                 }
+
+                // add some buffer to the last one in the list
+                &:last-child::after {
+                    content: '';
+                    display: block;
+                    width: 6vmin;
+                    height: 100%;
+                    right: 0;
+                }
             }
         }
     }
@@ -368,14 +377,6 @@ main {
         h1 {
             color: var(--text-color-take);
             font-size: max(2.5vmax, 2rem); // slightly smaller
-        }
-
-        article {
-            align-items: center;
-            border-radius: max(2vmax, 1rem);
-            display: flex;
-            flex-direction: column;
-            width: min(50vmax, 100%);
         }
     }
 
