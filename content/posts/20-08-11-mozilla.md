@@ -5,9 +5,9 @@ author: Andrew Gioia
 slug: mozilla
 date: 2020-08-14
 publishdate: 2020-08-14
-banner: post-cover.png
+banner: https://media.gioia.cloud/blog/posts/mozilla/post-cover.png
 images:
-    - posts/mozilla/post-cover.png
+    - https://media.gioia.cloud/blog/posts/mozilla/post-cover.png
 description: I love Mozilla, I love its mission, and I love its core product, Firefox. It absolutely sucks as a business though, and its current trajectory is insolvency. Mozilla needs to focus on Firefox and core technologies, sell privacy-first software as a service, and bring back technical leadership if it truly wants to execute on its mission.
 tags: 
     - Mozilla
@@ -54,8 +54,8 @@ I was _excited_ to switch away from Firefox in 2009 when Google Chrome became a 
 * **Incognito Mode was very useful.** Safari had apparently had this for years but I wasn't on a Mac then and Safari wasn't popular for a lot of other reasons on Windows. While very basic, Incognito windows were my first foray into Internet privacy and became an easy way to load a fresh copy of a website. 
 
 {{< picture 
-    source="firefox-chrome-2009@light.png"
-    dark="firefox-chrome-2009@dark.png" 
+    source="https://media.gioia.cloud/blog/posts/mozilla/firefox-chrome-2009@light.png"
+    dark="https://media.gioia.cloud/blog/posts/mozilla/firefox-chrome-2009@dark.png" 
     alt="Firefox and Chrome in 2009" 
     title="Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008."
     caption="Firefox 3 and Google Chrome 0.2.149 on Windows XP in late 2008." >}}
